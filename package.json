@@ -1,0 +1,24 @@
+{
+  "name": "ijc-website",
+  "version": "0.0.1",
+  "description": "Website of the International Jugger Council",
+  "scripts": {
+    "serve": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -r _site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/international-jugger-council/ijc-website.git"
+  },
+  "author": "IJC Web Committee",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/international-jugger-council/ijc-website/issues"
+  },
+  "homepage": "https://juggercouncil.org",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
