@@ -20,5 +20,8 @@
   "homepage": "https://juggercouncil.org",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0"
+  },
+  "dependencies": {
+    "bulma": "^0.8.1"
   }
 }
