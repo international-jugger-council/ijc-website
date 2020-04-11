@@ -49,20 +49,22 @@ function initMap() {
   var markers = spreadsheet_data.slice(1).map(function(club_data, i) {
     console.log(club_data[active_col], club_data[armored_col], club_data[name_col]);
     // images for things that are or are not to be shown
-    var image = 'skull.png';
+    var IMAGE_ROOT = '../../img/map'
+
+    var image = IMAGE_ROOT + '/skull.png';
 
     if (club_data[armored_col] == 'TRUE') {
       if (! showArmored) {
         return;
       }
-      image = 'skull_red.png'
+      image = IMAGE_ROOT + '/skull_red.png'
     }
 
     if (club_data[active_col] != 'TRUE') {
       if (! showInactive) {
         return;
       }
-      image = 'skull_gray.png'
+      image = IMAGE_ROOT + '/skull_gray.png'
     }
 
     // otherwise, make a marker for it

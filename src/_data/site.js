@@ -15,4 +15,9 @@ module.exports = {
     metaDescription: 'El Consejo Internacional del Jugger (CIJ) es un organismo colegiado de representación de la comunidad internacional del Jugger.',
     navLanguage: 'Idioma',
   },
+  languages: [
+    'de',
+    'en',
+    'es,'
+  ]
 };

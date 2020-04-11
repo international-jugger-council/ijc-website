@@ -1,13 +1,51 @@
 {% for menu in nav[lang] %}
   <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link" href="{{ menu.page | url }}">
-      {{ menu.label }}
-    </a>
-    <div class="navbar-dropdown">
+    {% if menu.href %}
+      <a class="navbar-link" href="{{ menu.href }}">
+        <span>{{ menu.label }} </span>
+        <span class="icon">
+          <i class="fas fa-external-link-alt"></i>
+        </span>
+      </a>
+    {% elif menu.pageKey %}
+      {% set pageKeyUrl = '/' + lang %}
+      {% for page in collections.all %}
+        {% if page.data.pageKey === menu.pageKey and page.data.lang == lang %}
+          {% set pageKeyUrl = page.url %}
+        {% endif %}
+      {% endfor %}
+      <a class="navbar-link" href="{{ pageKeyUrl | url }}">
+        <span>{{ menu.label }}</span>
+      </a>
+    {% else %}
+      <span class="navbar-link">
+        {{ menu.label }}
+      </span>
+    {% endif %}
+    <div class="navbar-dropdown is-right">
       {% for item in menu.items %}
-        <a class="navbar-item" href="{{ menu.page | url }}">
-          {{ item.label }}
-        </a>
+        {% if item.href %}
+          <a class="navbar-item" href="{{ item.href }}">
+            <span>{{ item.label }} </span>
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </a>
+        {% elif item.pageKey %}
+          {% set pageKeyUrl = '/' + lang %}
+          {% for page in collections.all %}
+            {% if page.data.pageKey === item.pageKey and page.data.lang == lang %}
+              {% set pageKeyUrl = page.url %}
+            {% endif %}
+          {% endfor %}
+          <a class="navbar-item" href="{{ pageKeyUrl | url }}">
+            <span>{{ item.label }}</span>
+          </a>
+        {% else %}
+          <span class="navbar-item">
+            {{ item.label }}
+          </span>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

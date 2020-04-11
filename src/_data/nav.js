@@ -1,113 +1,92 @@
 module.exports = {
   de: [{
     label: 'Jugger spielen',
-    page: 'play',
+    pageKey: 'play',
     items: [{
       label: 'Regeln',
-      page: 'play',
+      pageKey: 'play',
     }, {
       label: 'Finde Verein',
-      page: 'play',
+      pageKey: 'map',
     }, {
       label: 'Gründe Verein',
-      page: 'play',
+      pageKey: 'play',
     }, {
       label: 'Verbinde mit der Community',
-      page: 'play',
+      pageKey: 'play',
     }],
   }, {
     label: 'Über uns',
-    page: 'about',
+    pageKey: 'about',
     items: [{
       label: 'Leitbild',
-      page: 'about',
+      pageKey: 'about',
     }, {
       label: 'Wer wir sind',
-      page: 'about',
-    }],
-  }, {
-    label: 'Ressourcen',
-    page: 'resources',
-    items: [{
-      label: 'Jugger-Geschichte',
-      page: 'resources',
+      pageKey: 'about',
     }, {
-      label: 'Medien',
-      page: 'resources',
+      label: 'Jugger-Geschichte',
+      href: 'https://youtu.be/LZ1WYXq14u0?t=10005',
     }],
   }],
   en: [{
     label: 'Play Jugger',
-    page: 'play',
+    pageKey: 'play',
     items: [{
       label: 'Rules',
-      page: 'play',
+      pageKey: 'play',
     }, {
       label: 'Find a Club',
-      page: 'play',
+      pageKey: 'map',
     }, {
       label: 'Start a Club',
-      page: 'play',
+      pageKey: 'play',
     }, {
       label: 'Connect with the Community',
-      page: 'play',
+      pageKey: 'play',
     }],
   }, {
     label: 'About Us',
-    page: 'about',
+    pageKey: 'about',
     items: [{
       label: 'Mission Statement',
-      page: 'about',
+      pageKey: 'about',
     }, {
       label: 'Who We Are',
-      page: 'about',
-    }],
-  }, {
-    label: 'Resources',
-    page: 'resources',
-    items: [{
-      label: 'Jugger History',
-      page: 'resources',
+      pageKey: 'about',
     }, {
-      label: 'Media',
-      page: 'resources',
+      label: 'Jugger History',
+      href: 'https://youtu.be/LZ1WYXq14u0?t=10005',
     }],
   }],
   es: [{
     label: 'Jugar Jugger',
-    page: 'play',
+    pageKey: 'play',
     items: [{
       label: 'Reglas',
-      page: 'play',
+      pageKey: 'play',
     }, {
       label: 'Encontrar un Club',
-      page: 'play',
+      pageKey: 'map',
     }, {
       label: 'Iniciar un Club',
-      page: 'play',
+      pageKey: 'play',
     }, {
       label: 'Conectarse con la Comunidad',
-      page: 'play',
+      pageKey: 'play',
     }],
   }, {
     label: 'Sobre Nosotros',
-    page: 'about',
+    pageKey: 'about',
     items: [{
       label: 'Estado de la Misión',
-      page: 'about',
+      pageKey: 'about',
     }, {
       label: 'Quienes Somos',
-      page: 'about',
-    }],
-  }, {
-    label: 'Recursos',
-    page: 'resources',
-    items: [{
-      label: 'Historia del Jugger',
-      page: 'resources',
+      pageKey: 'about',
     }, {
-      label: 'Cobertura mediática',
-      page: 'resources',
+      label: 'Historia del Jugger',
+      href: 'https://youtu.be/LZ1WYXq14u0?t=10005',
     }],
   }],
 };
