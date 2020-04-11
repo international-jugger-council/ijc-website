@@ -2,15 +2,14 @@
 cssIncludes:
 jsIncludes:
 lang: en
-title: The International Jugger Council
 ---
 <!DOCTYPE html>
-<html lang="{{ lang }}">
+<html class="has-navbar-fixed-top" lang="{{ lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <meta name="description" content="The International Jugger Council (IJC) is an international organization to promote and support the sport of Jugger.">
+    <title>{{ site[lang].metaTitle }}</title>
+    <meta name="description" content="{{ site[lang].metaDescription }}">
     <link rel="stylesheet" href="{{ '/css/bulma.min.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
     {% for css in cssIncludes %}
@@ -18,83 +17,36 @@ title: The International Jugger Council
     {% endfor %}
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div id="brand" class="navbar-brand">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
         <a class="navbar-item" href="{{ '/' | url }}">
-          <img src="{{ '/img/logo.png' | url }}">
-          <h1>The International Jugger Council</h1>
+          <img id="ijc_logo" src="{{ '/img/logo.png' | url }}">
+          <h1>{{ site[lang].metaTitle }}</h1>
         </a>
 
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar_menu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
 
-      <div id="navbar" class="navbar-menu">
+      <div id="navbar_menu" class="navbar-menu">
         <div class="navbar-start"></div>
 
         <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Play Jugger
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                Rules
-              </a>
-              <a class="navbar-item">
-                Visit / Find a Club
-              </a>
-              <a class="navbar-item">
-                Start / Grow a Club
-              </a>
-              <a class="navbar-item">
-                Connect with the Community
-              </a>
-            </div>
-          </div>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              About Us
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                Mission Statement
-              </a>
-              <a class="navbar-item">
-                Who We Are
-              </a>
-              <a class="navbar-item">
-                Supporters
-              </a>
-            </div>
-          </div>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Resources
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                Jugger History
-              </a>
-              <a class="navbar-item">
-                Media
-              </a>
-              <a class="navbar-item">
-                Legal
-              </a>
-            </div>
-          </div>
-
+          {% include 'languageSwitcher.njk' %}
+          {% include 'nav.njk' %}
         </div>
       </div>
     </nav>
-    <a href="{{ '/en/map' | url }}">a map!</a>
     {{ content | safe }}
+    <script src="{{ '/js/main.js' | url }}"></script>
     {% for js in jsIncludes %}
       <script src="{{js | url}}"></script>
     {% endfor %}

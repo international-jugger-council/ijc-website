@@ -1,0 +1,14 @@
+{% for menu in nav[lang] %}
+  <div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-link" href="{{ menu.page | url }}">
+      {{ menu.label }}
+    </a>
+    <div class="navbar-dropdown">
+      {% for item in menu.items %}
+        <a class="navbar-item" href="{{ menu.page | url }}">
+          {{ item.label }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}

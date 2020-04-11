@@ -1,3 +1,23 @@
-#brand > .navbar-item > img {
+nav {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+#ijc_logo {
   margin-right: 0.5rem;
+}
+
+#ijc_lang {
+  min-height: calc(100vh - 52px);
+}
+
+.ijc-blurb {
+  margin: 2.5rem 0;
+}
+
+.ijc-blurb > .container > h2 {
+  margin-bottom: 2rem;
+}
+
+.ijc-blurb > .container > p:not(:last-child) {
+  margin-bottom: 1.5rem;
 }

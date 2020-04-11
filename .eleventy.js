@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('js');
   eleventyConfig.addPassthroughCopy({
     'node_modules/bulma/css/bulma.min.css': 'css/bulma.min.css',
   });
@@ -12,9 +13,9 @@ module.exports = function(eleventyConfig) {
       'html',
       'ico',
       'jpg',
-      'js',
       'njk',
       'png',
+      'svg',
       'txt',
     ],
   };
