@@ -1,1 +1,3 @@
-homeRedirectLang();
+if (typeof homeRedirectLang !== 'undefined') {
+  homeRedirectLang();
+}

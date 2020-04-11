@@ -12,7 +12,8 @@
       {% endfor %}
       <a
         class="navbar-item"
-        href="{{ pageKeyUrl | url}}">
+        href="{{ pageKeyUrl | url}}"
+        onclick="setLang('{{ supportedLanguage.lang }}')">
         {{ supportedLanguage.label }}
       </a>
     {% endfor %}
