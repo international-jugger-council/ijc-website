@@ -1,5 +1,11 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy('js');
+  eleventyConfig.addPassthroughCopy("**/*.css");
+  eleventyConfig.addPassthroughCopy("**/*.ico");
+  eleventyConfig.addPassthroughCopy("**/*.jpg");
+  eleventyConfig.addPassthroughCopy("**/*.js");
+  eleventyConfig.addPassthroughCopy("**/*.png");
+  eleventyConfig.addPassthroughCopy("**/*.svg");
+  eleventyConfig.addPassthroughCopy("**/*.txt");
   eleventyConfig.addPassthroughCopy({
     'node_modules/bulma/css/bulma.min.css': 'css/bulma.min.css',
   });
@@ -9,14 +15,8 @@ module.exports = function(eleventyConfig) {
     },
     htmlTemplateEngine: 'njk',
     templateFormats: [
-      'css',
       'html',
-      'ico',
-      'jpg',
       'njk',
-      'png',
-      'svg',
-      'txt',
     ],
   };
 };
