@@ -14,6 +14,9 @@
           {% set pageKeyUrl = page.url %}
         {% endif %}
       {% endfor %}
+      {% if menu.pageSection %}
+        {% set pageKeyUrl = pageKeyUrl + '#' + menu.pageSection %}
+      {% endif %}
       <a class="navbar-link" href="{{ pageKeyUrl | url }}">
         <span>{{ menu.label }}</span>
       </a>
@@ -38,6 +41,9 @@
               {% set pageKeyUrl = page.url %}
             {% endif %}
           {% endfor %}
+          {% if item.pageSection %}
+            {% set pageKeyUrl = pageKeyUrl + '#' + item.pageSection %}
+          {% endif %}
           <a class="navbar-item" href="{{ pageKeyUrl | url }}">
             <span>{{ item.label }}</span>
           </a>
