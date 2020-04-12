@@ -20,3 +20,14 @@ function homeRedirectLang() {
   const lang = getLang();
   window.location.pathname = `${window.location.pathname}/${lang}`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
+  $navbarBurgers.forEach(($navbarBurger) => {
+    $navbarBurger.addEventListener('click', () => {
+      const $target = document.getElementById($navbarBurger.dataset.target);
+      $navbarBurger.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    });
+  });
+});
