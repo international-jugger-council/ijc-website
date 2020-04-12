@@ -1,4 +1,8 @@
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('src/css/*.css');
+  eleventyConfig.addPassthroughCopy('src/img/**/*');
+  eleventyConfig.addPassthroughCopy('src/js/*.js');
+  eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy({
     'node_modules/bulma/css/bulma.min.css': 'css/bulma.min.css',
   });
@@ -8,15 +12,8 @@ module.exports = function(eleventyConfig) {
     },
     htmlTemplateEngine: 'njk',
     templateFormats: [
-      'css',
       'html',
-      'ico',
-      'jpg',
-      'js',
       'njk',
-      'png',
-      'svg',
-      'txt',
     ],
   };
 };

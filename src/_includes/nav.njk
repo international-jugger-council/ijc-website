@@ -1,5 +1,5 @@
 {% for menu in nav[lang] %}
-  <div class="navbar-item has-dropdown is-hoverable">
+  <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
     {% if menu.href %}
       <a class="navbar-link" href="{{ menu.href }}">
         <span>{{ menu.label }} </span>

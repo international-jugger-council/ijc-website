@@ -1,4 +1,4 @@
-<div class="navbar-item has-dropdown is-hoverable">
+<div class="navbar-item has-dropdown is-hoverable" tabindex="0">
   <a class="navbar-link">
     {{ site[lang].navLanguage }}
   </a>
@@ -12,8 +12,7 @@
       {% endfor %}
       <a
         class="navbar-item"
-        href="{{ pageKeyUrl | url}}"
-        onclick="setLang('{{ supportedLanguage.lang }}')">
+        href="{{ pageKeyUrl | url}}">
         {{ supportedLanguage.label }}
       </a>
     {% endfor %}

@@ -21,7 +21,7 @@ function homeRedirectLang() {
   window.location.pathname = `${window.location.pathname}/${lang}`;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initNavbarBurgers() {
   const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
   $navbarBurgers.forEach(($navbarBurger) => {
     $navbarBurger.addEventListener('click', () => {
@@ -30,4 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
       $target.classList.toggle('is-active');
     });
   });
+}
+
+function setPageLang() {
+  for (let i = 0; i < LANGS_SUPPORTED.length; i++) {
+    const lang = LANGS_SUPPORTED[i];
+    const langPath = `/${lang}/`;
+    if (window.location.pathname.indexOf(langPath) !== -1) {
+      setLang(lang);
+      return;
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNavbarBurgers();
+  setPageLang();
 });
