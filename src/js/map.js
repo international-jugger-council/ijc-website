@@ -61,9 +61,10 @@ function initMap() {
   var contact_method_col = spreadsheet_data[0].indexOf('Contact Method');
   var active_col = spreadsheet_data[0].indexOf('Active?');
   var armored_col = spreadsheet_data[0].indexOf('Armored?');
+  var youth_col = spreadsheet_data[0].indexOf('Youth?');
   var description_col = spreadsheet_data[0].indexOf('Description');
+  var logo_col = spreadsheet_data[0].indexOf('Logo');
   var markers = spreadsheet_data.slice(1).map(function(club_data, i) {
-    console.log(club_data[active_col], club_data[armored_col], club_data[name_col]);
     // images for things that are or are not to be shown
     var IMAGE_ROOT = '../../img/map'
 
@@ -81,6 +82,13 @@ function initMap() {
         return;
       }
       image = IMAGE_ROOT + '/IJC_map_pin_inactive.png'
+    }
+
+    if (club_data[youth_col] == 'TRUE') {
+      if (! showYouth) {
+        return;
+      }
+      image = 'IJC_map_pin_youth.png'
     }
 
     // otherwise, make a marker for it
@@ -147,8 +155,9 @@ function initMap() {
       {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 }
 
-var showInactive = false;
-var showArmored = false;
+var showInactive = getQueryVariable('showInactive');
+var showArmored = getQueryVariable('showArmored');
+var showYouth = getQueryVariable('showYouth');
 
 function setShowInactive() {
   showInactive = document.getElementById("showInactive").checked;
@@ -156,5 +165,9 @@ function setShowInactive() {
 }
 function setShowArmored() {
   showArmored = document.getElementById("showArmored").checked;
+  initMap();
+}
+function setShowYouth() {
+  showYouth = document.getElementById("showYouth").checked;
   initMap();
 }
