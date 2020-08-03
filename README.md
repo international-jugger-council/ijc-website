@@ -8,7 +8,7 @@ If you have a question related to the IJC website, try contacting one of these p
 
 | Role | Name | GitHub | Discord |
 |-|-|-|-|
-| Designer | Valkyrie Savage | @valkyriesavage | parmesan002#8375 |
+| Web Presence Commissioner | Valkyrie Savage | @valkyriesavage | parmesan002#8375 |
 | Maintainer | Evan Savage | @candu | candu#2402 |
 
 Note that the IJC is volunteer-run; we have no dedicated support staff, our members are across various timezones, and the people working on this website have day jobs!  We'll try to respond within a few days - and sooner if the matter is urgent - but we can't make any guarantees.

@@ -21,11 +21,3 @@ nav {
 .ijc-blurb > .container > p:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-
-.mt-1 {
-  margin-top: 4px;
-}
-
-.mt-2 {
-  margin-top: 8px;
-}
