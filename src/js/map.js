@@ -92,8 +92,12 @@ function initMap() {
     }
 
     // otherwise, make a marker for it
-    var info_window_string = `<div id="content">
-      <div id="siteNotice"></div>
+    var info_window_string = `<div id="content">`;
+    if (club_data[logo_col]) {
+      // if we have a logo to show, jam everything into a table and put the logo on one side of it.
+      info_window_string += `<table><tr><td style="padding-right:15px"><img src= ${club_data[logo_col]}></td><td>`
+    }
+    info_window_string += `
       <h1 id="firstHeading" class="firstHeading">
         ${club_data[name_col]} : ${club_data[city_col]}, ${club_data[country_col]}
       </h1>
@@ -123,8 +127,12 @@ function initMap() {
     info_window_string += `<p>
         ${club_data[description_col]}
         </p>
-      </div>
-      </div>`;
+      </div>`
+    if (club_data[logo_col]) {
+      // if we're showing a logo, we need to close off our tables all tidy-like.
+      info_window_string += `</td></tr></table>`
+    }
+    info_window_string += `</div>`;
 
     var infowindow = new google.maps.InfoWindow({
       content: info_window_string
