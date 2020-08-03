@@ -26,12 +26,28 @@ function listCentres() {
     });
 }
 
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split('&');
+  for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=');
+      if (decodeURIComponent(pair[0]) == variable) {
+          return decodeURIComponent(pair[1]);
+      }
+  }
+  return '';
+}
+
 function initMap() {
+  startLat = parseFloat(getQueryVariable('lat')) || 43.6754782;
+  startLng = parseFloat(getQueryVariable('lng')) || -79.3481673;
+  startZoom = parseFloat(getQueryVariable('zoom')) || 2;
+
   num_markers = 0;
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 3,
-    center: {lat: 43.6754782, lng: -79.3481673}
+    zoom: startZoom,
+    center: {lat: startLat, lng: startLng}
   });
 
   // Add ze markers to ze map.
@@ -51,20 +67,20 @@ function initMap() {
     // images for things that are or are not to be shown
     var IMAGE_ROOT = '../../img/map'
 
-    var image = IMAGE_ROOT + '/skull.png';
+    var image = IMAGE_ROOT + '/IJC_map_pin.png';
 
     if (club_data[armored_col] == 'TRUE') {
       if (! showArmored) {
         return;
       }
-      image = IMAGE_ROOT + '/skull_red.png'
+      image = IMAGE_ROOT + '/IJC_map_pin_armored.png'
     }
 
     if (club_data[active_col] != 'TRUE') {
       if (! showInactive) {
         return;
       }
-      image = IMAGE_ROOT + '/skull_gray.png'
+      image = IMAGE_ROOT + '/IJC_map_pin_inactive.png'
     }
 
     // otherwise, make a marker for it
