@@ -67,6 +67,9 @@ module.exports = {
       pageKey: 'about',
       pageSection: 'who',
     }, {
+      label: 'Code of Conduct',
+      href: 'https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit?usp=sharing'
+    }, {
       label: 'Jugger History',
       href: 'https://youtu.be/LZ1WYXq14u0?t=10005',
     }],
