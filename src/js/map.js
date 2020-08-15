@@ -108,7 +108,7 @@ function initMap() {
           </p>`;
     }
     if (club_data[armored_col] == 'TRUE') {
-      info_window_string += '<p>Armored jugger club</p>'
+      info_window_string += '<p>Armored Jugger club</p>'
     }
     if (club_data[contact_person_col] != '' || club_data[contact_method_col] != '') {
       info_window_string += `<p>

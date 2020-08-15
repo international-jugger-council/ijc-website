@@ -17,6 +17,65 @@ jsIncludes:
     <script src="https://kit.fontawesome.com/b248b23f0a.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="ijc_modal_lang_warning" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <div class="modal-card-title">Translation in progress!</div>
+        </header>
+        <section class="modal-card-body">
+          <p>
+            We're working to translate the IJC website into a variety of languages - it's a resource for the global Jugger community, and we believe that the languages available here should reflect that!
+          </p>
+
+          <p>
+            If you'd like to help us translate this website into a language you're fluent in, contact us on Discord or via email:
+          </p>
+
+          <div class="card mt-5">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="{{ '/img/social/discord.svg' | url }}" alt="Logo: Discord">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Discord</p>
+                  <p class="subtitle is-6">
+                    <a href="https://discord.gg/jXqhcYu">Jugger Worldwide</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="{{ '/img/social/gmail.svg' | url }}" alt="Logo: GMail">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Email</p>
+                  <p class="subtitle is-6">
+                    <a href="mailto:juggerinternational@gmail.com">juggerinternational@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button
+            class="button is-success is-pulled-right"
+            onclick="closeModalLangWarning()">OK</button>
+        </footer>
+      </div>
+    </div>
+
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="{{ '/' | url }}">
@@ -45,7 +104,9 @@ jsIncludes:
         </div>
       </div>
     </nav>
+
     {{ content | safe }}
+
     <script src="{{ '/js/main.js' | url }}"></script>
     {% for js in jsIncludes %}
       <script src="{{js | url}}"></script>

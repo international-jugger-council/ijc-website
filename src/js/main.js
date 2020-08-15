@@ -32,15 +32,32 @@ function initNavbarBurgers() {
   });
 }
 
-function setPageLang() {
+function getPageLang() {
   for (let i = 0; i < LANGS_SUPPORTED.length; i++) {
     const lang = LANGS_SUPPORTED[i];
     const langPath = `/${lang}/`;
     if (window.location.pathname.indexOf(langPath) !== -1) {
-      setLang(lang);
-      return;
+      return lang;
     }
   }
+  return null;
+}
+
+function setPageLang() {
+  const lang = getPageLang();
+  if (lang === null) {
+    return;
+  }
+  if (lang !== 'en') {
+    const $modalLangWarning = document.querySelector('#ijc_modal_lang_warning');
+    $modalLangWarning.classList.add('is-active');
+  }
+  setLang(lang);
+}
+
+function closeModalLangWarning() {
+  const $modalLangWarning = document.querySelector('#ijc_modal_lang_warning');
+  $modalLangWarning.classList.remove('is-active');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
