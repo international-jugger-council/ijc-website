@@ -4,6 +4,11 @@ const LANGS_SUPPORTED = [
   'de',
 ];
 
+const LANGS_TRANSLATED = [
+  'en',
+  'es',
+];
+
 function getLang() {
   const lang = window.localStorage.getItem('lang');
   if (LANGS_SUPPORTED.includes(lang)) {
@@ -48,7 +53,7 @@ function setPageLang() {
   if (lang === null) {
     return;
   }
-  if (lang !== 'en') {
+  if (!LANGS_TRANSLATED.includes(lang)) {
     const $modalLangWarning = document.querySelector('#ijc_modal_lang_warning');
     $modalLangWarning.classList.add('is-active');
   }

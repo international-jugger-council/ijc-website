@@ -82,15 +82,15 @@ module.exports = {
       pageKey: 'play',
       pageSection: 'rules',
     }, {
-      label: 'Encontrar un Club',
+      label: 'Encuentra un Club',
       pageKey: 'play',
       pageSection: 'find',
     }, {
-      label: 'Iniciar un Club',
+      label: 'Funda un Club',
       pageKey: 'play',
       pageSection: 'start',
     }, {
-      label: 'Conectarse con la Comunidad',
+      label: 'Conecta con la Comunidad',
       pageKey: 'play',
       pageSection: 'connect',
     }],
@@ -98,11 +98,11 @@ module.exports = {
     label: 'Sobre Nosotros',
     pageKey: 'about',
     items: [{
-      label: 'Estado de la Misión',
+      label: 'Nuestra misión',
       pageKey: 'about',
       pageSection: 'mission',
     }, {
-      label: 'Quienes Somos',
+      label: 'Quiénes somos',
       pageKey: 'about',
       pageSection: 'who',
     }, {

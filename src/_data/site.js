@@ -7,12 +7,12 @@ module.exports = {
   },
   en: {
     metaTitle: 'The International Jugger Council',
-    metaDescription: 'The International Jugger Council (IJC) is a representative body for the worldwide Jugger community.',
+    metaDescription: 'The International Jugger Council (IJC) is a representative body for the worldwide jugger community.',
     navLanguage: 'Language',
   },
   es: {
     metaTitle: 'El Consejo Internacional del Jugger',
-    metaDescription: 'El Consejo Internacional del Jugger (CIJ) es un organismo colegiado de representación de la comunidad internacional del Jugger.',
+    metaDescription: 'El Consejo Internacional del Jugger (CIJ) es un organismo representativo para la comunidad mundial del jugger.',
     navLanguage: 'Idioma',
   },
   supportedLanguages: [
