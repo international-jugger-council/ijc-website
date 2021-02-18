@@ -3,240 +3,112 @@ layout: base.njk
 pageKey: about
 title: About Us
 ---
-<section id="mission" class="hero is-medium is-info is-bold">
+<section id="mission" class="hero is-medium">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
-        TODO
-      </h1>
+      <h2>Our mission</h2>
     </div>
   </div>
 </section>
 <section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">Mission Statement</h2>
-    <article class="message">
-      <div class="message-body has-text-left is-size-5">
+  <div class="container">
+    <div class="columns is-desktop">
+      <div class="column">
         <p>
-          We want to know where jugger is played, how it is played, and what they need from us to grow.
+          <strong>The IJC Mission Statement was adopted on October 2, 2019</strong> as part of its first Charter:
         </p>
-        <p class="mt-2">
-          We want to gather experts and volunteers from around the world to provide all the material and agreements needed to support that growth.
-        </p>
-        <p class="mt-2">
-          We want to make it easier to compete with other juggers from around the world.
+        <p class="mt-4 is-size-3">
+          <a href="https://docs.google.com/document/d/1SUXlLNPV6Kx9I2xVxt3OhHyd2PUB94KuWtNW8JV0xo0/edit?usp=sharing">IJC Charter</a>
         </p>
       </div>
-    </article>
-    <p>
-      This IJC Mission Statement was adopted on 2<sup>nd</sup> October, 2019 as part of its first Charter:
-    </p>
-    <p class="mt-2">
-      <a class="is-size-4" href="https://docs.google.com/document/d/1SUXlLNPV6Kx9I2xVxt3OhHyd2PUB94KuWtNW8JV0xo0/edit?usp=sharing">IJC Charter</a>
-    </p>
+      <div class="column">
+        <article class="message">
+          <div class="message-body has-text-left is-size-5">
+            <p>
+              We want to know where jugger is played, how it is played, and what they need from us to grow.
+            </p>
+            <p class="mt-2">
+              We want to gather experts and volunteers from around the world to provide all the material and agreements needed to support that growth.
+            </p>
+            <p class="mt-2">
+              We want to make it easier to compete with other juggers from around the world.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <hr>
+
     <h3 class="is-size-3 mb-4">Code of Conduct</h3>
-    <article class="message">
-      <div class="message-body has-text-left is-size-5">
-        The purpose of this Code of Conduct is to outline the International Jugger Council’s (IJC) commitment to an environment free from inappropriate behaviour, specifically Bullying, Violence, Harassment, Discrimination, Sexual Harassment and Victimisation, and provide a clear and simple incident and complaint handling procedure.
+    <div class="columns is-desktop">
+      <div class="column">
+        <p>
+          Do you coach other juggers, promote your club locally, organize tournaments, or otherwise serve as a leader in your local jugger club?  <strong>The IJC Code of Conduct can help you create an safe, enjoyable and inclusive environment</strong> for the sport of jugger.
+        </p>
+        <p class="is-size-3">
+          <a href="https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit">IJC Code of Conduct</a>
+        </p>
       </div>
-    </article>
-    <p>
-      Do you coach other juggers, promote your club locally, organize tournaments, or otherwise hold a position of leadership or seniority in your local jugger organization?  The IJC Code of Conduct provides a useful starting point to help you create an safe, enjoyable and inclusive environment for the sport of jugger.
-    </p>
-    <p class="mt-2">
-      <a class="is-size-4" href="https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit">IJC Code of Conduct</a>
-    </p>
+      <div class="column">
+        <article class="message">
+          <div class="message-body has-text-left is-size-5">
+            The purpose of this Code of Conduct is to outline the International Jugger Council’s (IJC) commitment to an environment free from inappropriate behaviour, specifically Bullying, Violence, Harassment, Discrimination, Sexual Harassment and Victimisation, and provide a clear and simple incident and complaint handling procedure.
+          </div>
+        </article>
+      </div>
+    </div>
+
+
   </div>
 </section>
-<section id="who" class="hero is-medium is-info is-bold">
+<section id="who" class="hero is-medium">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
-        TODO
-      </h1>
+      <h2>Who we are</h2>
     </div>
   </div>
 </section>
 <section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">Who We Are</h2>
+  <div class="container">
     <p>
       The IJC is a volunteer-run organization, run by juggers who take an interest in supporting and growing the sport of jugger.  If you're interested in learning more, want to help as a volunteer, or have feedback, comments, or questions - contact us!
     </p>
-    <div class="columns has-text-left">
+    {% include 'contactsIJC.njk' %}
 
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ '/img/social/discord.svg' | url }}" alt="Logo: Discord">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Discord</p>
-                <p class="subtitle is-6">
-                  <a href="https://discord.gg/jXqhcYu">Jugger Worldwide</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <hr>
+
+    <div class="columns is-desktop">
+      <div class="column">
+        <h3 class="is-size-3 mb-4">Support Us!</h3>
+        <p>
+          There are no membership fees - the IJC is a non-profit forum and is funded via individual donations. If you like the objectives we’re working to achieve, please consider supporting us by sending a small amount of money to our account! To get the bank details, just get in touch with the Treasurer via Discord or email.
+        </p>
+        <p>
+          We can include your (or your organization's) name in our Top Supporters List.  Anonymous donations are also accepted!
+        </p>
       </div>
-
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ '/img/social/gmail.svg' | url }}" alt="Logo: GMail">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Email</p>
-                <p class="subtitle is-6">
-                  <a href="mailto:juggerinternational@gmail.com">juggerinternational@gmail.com</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="column">
+        <h4 class="is-size-3 mb-4">Top Supporters List</h4>
+        {% include 'supporters.njk' %}
       </div>
-
     </div>
 
-    <h3 class="is-size-3 mb-4">Support Us!</h3>
-    <p>
-      There are no membership fees - the IJC is a non-profit forum and is funded via individual donations. If you like the objectives we’re working to achieve, please consider supporting us by sending a small amount of money to our account! To get the bank details, just get in touch with the Treasurer via Discord or email.
-    </p>
-    <p>
-      We can include your (or your organization's) name in our Top Supporters List.  Anonymous donations are also accepted!
-    </p>
-
-    <h3 class="is-size-3 mb-4">Top Supporters List</h3>
-    <ul class="is-size-4 mb-6">
-      <li>Pijus “Pope” Stankevičius</li>
-      <li>Arturo Pérez Amores</li>
-    </ul>
+    <hr>
 
     <h3 class="is-size-3 mb-4">IJC Board</h3>
     <p>
       The Board is responsible for managing the International Jugger Council.
-      In alphabetical order, its current members are:
+      Its current members are:
     </p>
-    <table class="table is-fullwidth is-striped">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Country</th>
-          <th>Position(s)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Arturo Pérez Amores</td>
-          <td>Spain</td>
-          <td>President</td>
-        </tr>
-        <tr>
-          <td>Gabriel Maynard Hernández</td>
-          <td>Costa Rica</td>
-          <td>Growth Support Commissioner</td>
-        </tr>
-        <tr>
-          <td>Gil Richard</td>
-          <td>Canada</td>
-          <td>Mapping Commissioner</td>
-        </tr>
-        <tr>
-          <td>Ian Williams</td>
-          <td>USA</td>
-          <td>International Competition Commissioner</td>
-        </tr>
-        <tr>
-          <td>Miguel Alvarado</td>
-          <td>USA</td>
-          <td>Vice-President, Ethics Committee Commissioner</td>
-        </tr>
-        <tr>
-          <td>Pijus “Pope” Stankevičius</td>
-          <td>Lithuania</td>
-          <td>Legal Support Commissioner</td>
-        </tr>
-        <tr>
-          <td>Rickhard “Link” Nilsén</td>
-          <td>Sweden</td>
-          <td>Secretary</td>
-        </tr>
-        <tr>
-          <td>Valkyrie Savage</td>
-          <td>Canada</td>
-          <td>Web Presence Commissioner, Corporate Image Commissioner</td>
-        </tr>
-        <tr>
-          <td>Wendy J-M</td>
-          <td>Australia</td>
-          <td>Vice-Secretary, Treasurer, Rules Comparison Commissioner</td>
-        </tr>
-      </tbody>
-    </table>
+    {% include 'boardIJC.njk' %}
+
+    <hr>
 
     <h3 class="is-size-3 mb-4">IJC Committees</h3>
     <p>
       These committees help the IJC realize its mission.  If there's a particular committee or area you'd like to help out with, you can also reach out to the relevant Commissioner on Discord!
     </p>
-    <table class="table is-fullwidth is-striped">
-      <thead>
-        <tr>
-          <th>Committee</th>
-          <th>Commissioner</th>
-          <th>What They Do</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Web Presence</td>
-          <td>Valkyrie Savage</td>
-          <td>Designs and builds the IJC website and maintains our online presence.</td>
-        </tr>
-        <tr>
-          <td>Corporate Image</td>
-          <td>Valkyrie Savage</td>
-          <td>Designs and maintains a coherent visual brand for the IJC.</td>
-        </tr>
-        <tr>
-          <td>Mapping</td>
-          <td>Gil Richard</td>
-          <td>Keeps track of the locations of jugger groups across the globe and updates the Jugger World Map.</td>
-        </tr>
-        <tr>
-          <td>Growth Support</td>
-          <td>Gabriel Maynard Hernández</td>
-          <td>Assists new clubs with training, equipment building, and promotion.</td>
-        </tr>
-        <tr>
-          <td>Rules Comparison</td>
-          <td>Wendy J-M</td>
-          <td>Compares existing jugger rulebooks to help promote eventual agreement on an international ruleset.</td>
-        </tr>
-        <tr>
-          <td>International Competition</td>
-          <td>Ian Williams</td>
-          <td>Assists tournament organizers with planning tournaments at all scales and levels of play.</td>
-        </tr>
-        <tr>
-          <td>Legal Support</td>
-          <td>Pijus “Pope” Stankevičius</td>
-          <td>Manages internal IJC regulations and by-laws to ensure the IJC is a solid institution that can help out juggers at every level.</td>
-        </tr>
-        <tr>
-          <td>Ethics</td>
-          <td>Miguel Alvarado</td>
-          <td>Studies complaints of breaches of our <a href="https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit?usp=sharing">Code of Conduct</a> and provides recommendations for resolution.</td>
-        </tr>
-      </tbody>
-    </table>
+    {% include 'committeesIJC.njk' %}
   </div>
 </section>

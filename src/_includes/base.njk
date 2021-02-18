@@ -9,6 +9,10 @@ jsIncludes:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site[lang].metaTitle }}</title>
     <meta name="description" content="{{ site[lang].metaDescription }}">
+
+    <link rel="icon" type="image/svg+xml" href="{{ '/img/logo/logo_icon.svg' | url }}">
+    <link rel="alternate icon" href="{{ '/favicon.ico' | url }}">
+
     <link rel="stylesheet" href="{{ '/css/bulma.min.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
     {% for css in cssIncludes %}
@@ -76,10 +80,10 @@ jsIncludes:
       </div>
     </div>
 
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
         <a class="navbar-item" href="{{ '/' | url }}">
-          <img id="ijc_logo" src="{{ '/img/logo.png' | url }}" alt="{{ site[lang].metaTitle }}">
+          <img id="ijc_logo" src="{{ '/img/logo/logo_horizontal_no_text.png' | url }}" alt="{{ site[lang].metaTitle }}">
           <h1>{{ site[lang].metaTitle }}</h1>
         </a>
 
