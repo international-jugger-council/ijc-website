@@ -3,13 +3,13 @@ module.exports = {
     label: 'Jugger spielen',
     pageKey: 'play',
     items: [{
-      label: 'Regeln',
-      pageKey: 'play',
-      pageSection: 'rules',
-    }, {
       label: 'Finde Verein',
       pageKey: 'play',
       pageSection: 'find_a_club',
+    }, {
+      label: 'Regeln',
+      pageKey: 'play',
+      pageSection: 'rules',
     }, {
       label: 'Gründe Verein',
       pageKey: 'play',
@@ -38,14 +38,14 @@ module.exports = {
   en: [{
     label: 'Play Jugger',
     pageKey: 'play',
-    items: [{
-      label: 'Rules',
-      pageKey: 'play',
-      pageSection: 'rules',
-    }, {
+    items: [ {
       label: 'Find a Club',
       pageKey: 'play',
       pageSection: 'find_a_club',
+    }, {
+      label: 'Rules',
+      pageKey: 'play',
+      pageSection: 'rules',
     }, {
       label: 'Start a Club',
       pageKey: 'play',
@@ -78,13 +78,13 @@ module.exports = {
     label: 'Jugar Jugger',
     pageKey: 'play',
     items: [{
-      label: 'Reglas',
-      pageKey: 'play',
-      pageSection: 'rules',
-    }, {
       label: 'Encuentra un Club',
       pageKey: 'play',
       pageSection: 'find_a_club',
+    }, {
+      label: 'Reglas',
+      pageKey: 'play',
+      pageSection: 'rules',
     }, {
       label: 'Funda un Club',
       pageKey: 'play',

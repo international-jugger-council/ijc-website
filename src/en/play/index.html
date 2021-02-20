@@ -3,92 +3,94 @@ layout: base.njk
 pageKey: play
 title: Play Jugger
 ---
-<section id="rules" class="hero is-medium">
-  <div class="hero-body">
-    <div class="container">
-      <h2>Rules</h2>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container">
-    <div class="columns is-desktop">
-      <div class="column">
-        <p>
-          As a sport, <strong>Jugger is a work in progress: we don't yet have a single global ruleset!</strong> There are around 20 different national and local variants.  Most of these variants agree on basic rules, but there are differences in areas like refereeing and dimensions of equipment.
-        </p>
-        <p>
-          The most widely used rulesets are the German, Spanish, and Australian rulesets.  We're currently working on a tool to help players understand these different rulesets - in the meantime, check out the International Jugger Blog’s Rulebooks compilation!
-        </p>
-        <p class="is-size-3">
-          <a href="https://www.juggerblog.net/index.php?/archives/139-International-Jugger-rulebooks-Jugger-Archive-I.html">Check out international rulesets</a>
-        </p>
-      </div>
-      <div class="column"></div>
-    </div>
-  </div>
-</section>
-<section id="find_a_club" class="hero is-medium">
-  <div class="hero-body">
-    <div class="container">
-      <h2>Find a club</h2>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container">
-    <div class="columns is-desktop">
-      <div class="column">
-        <p class="is-size-4">
-          Jugger can be played almost anywhere!
-        </p>
-        <p>
-          There are jugger clubs in <strong>thirty countries across Europe, Asia, Oceania and the Americas</strong>. Check our Jugger World Map to see if there’s any such group near you - but if there isn’t, grab your friends and start one!
-        </p>
-        <p class="is-size-3">
-          <a href="{{ '/en/map' | url }}">Browse the map</a>
-        </p>
-      </div>
-      <div class="column"></div>
-    </div>
-  </div>
-</section>
-<section id="start_a_club" class="hero is-medium is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h2>Start a club</h2>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <p>
-          Have you just discovered jugger and want to bring it closer to home? Are you already a jugger player and wish to take your favourite sport when you move to a new town?
-        </p>
-        <p>
-          We've linked to some <strong>useful guides and tutorials</strong> to help you get started.
-        </p>
-      </div>
-      <div class="column">
-        {% include 'startClubResources.njk' %}
+<div id="page_play">
+  <section id="find_a_club" class="hero is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h2>Find a club</h2>
       </div>
     </div>
-  </div>
-</section>
-<section id="connect_with_community" class="hero is-medium is-info is-bold">
-  <div class="hero-body">
+  </section>
+  <section class="ijc-blurb">
     <div class="container">
-      <h2 style="font-size:3rem;line-height:175%;">Connect with the community</h2>
+      <div class="columns is-desktop">
+        <div class="column">
+          <p class="is-size-4">
+            Jugger can be played almost anywhere!
+          </p>
+          <p>
+            There are jugger clubs in <strong>thirty countries across Europe, Asia, Oceania and the Americas</strong>. Check our Jugger World Map to see if there’s any such group near you - but if there isn’t, grab your friends and start one!
+          </p>
+          <p class="is-size-3">
+            <a href="{{ '/en/map' | url }}">Browse the map</a>
+          </p>
+        </div>
+        <div class="column"></div>
+      </div>
     </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container">
-    <p>
-      A very important part of the jugger experience is to meet and stay in touch with new people.  Not sure how to do that?  These links will help you <strong>get in contact with your local, national, and international jugger community.</strong>  People in these forums and groups can point you in the right direction.
-    </p>
-    {% include 'connectCommunity.njk' %}
-  </div>
-</section>
+  </section>
+  <section id="rules" class="hero is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h2>Rules</h2>
+      </div>
+    </div>
+  </section>
+  <section class="ijc-blurb">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column">
+          <p>
+            As a sport, <strong>Jugger is a work in progress: we don't yet have a single global ruleset!</strong> There are around 20 different national and local variants.  Most of these variants agree on basic rules, but there are differences in areas like refereeing and dimensions of equipment.
+          </p>
+          <p>
+            The most widely used rulesets are the German, Spanish, and Australian rulesets.  We're currently working on a tool to help players understand these different rulesets - in the meantime, check out the International Jugger Blog’s Rulebooks compilation!
+          </p>
+          <p class="is-size-3">
+            <a href="https://www.juggerblog.net/index.php?/archives/139-International-Jugger-rulebooks-Jugger-Archive-I.html">Check out international rulesets</a>
+          </p>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </section>
+  <section id="start_a_club" class="hero is-medium is-info is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h2>Start a club</h2>
+      </div>
+    </div>
+  </section>
+  <section class="ijc-blurb">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <p>
+            Have you just discovered jugger and want to bring it closer to home? Are you already a jugger player and wish to take your favourite sport when you move to a new town?
+          </p>
+          <p>
+            We've linked to some <strong>useful guides and tutorials</strong> to help you get started.
+          </p>
+        </div>
+        <div class="column">
+          {% include 'startClubResources.njk' %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="connect_with_community" class="hero is-medium is-info is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h2>Connect with the community</h2>
+      </div>
+    </div>
+  </section>
+  <section class="ijc-blurb">
+    <div class="container">
+      <p>
+        A very important part of the jugger experience is to meet and stay in touch with new people.  Not sure how to do that?  These links will help you <strong>get in contact with your local, national, and international jugger community.</strong>  People in these forums and groups can point you in the right direction.
+      </p>
+      {% include 'connectCommunity.njk' %}
+    </div>
+  </section>
+</div>
