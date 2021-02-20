@@ -1,5 +1,45 @@
+@font-face {
+    font-family: "Clean Sports";
+    src: url(/fonts/CleanSports.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Clean Sports Stencil";
+    src: url(/fonts/CleanSports_Stencil.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(/fonts/CaviarDreams.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(/fonts/CaviarDreams_Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(/fonts/CaviarDreams_Italic.ttf) format("truetype");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(/fonts/CaviarDreams_BoldItalic.ttf) format("truetype");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
 body {
+  font-family: "Caviar Dreams";
   min-width: 600px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Clean Sports";
+}
+
+a {
+  font-weight: bold;
 }
 
 #ijc_modal_lang_warning .modal-card-foot {
