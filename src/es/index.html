@@ -2,52 +2,16 @@
 layout: base.njk
 pageKey: index
 ---
-<section class="hero is-medium is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        TODO: top image
-      </h1>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">¿Qué es el jugger?</h2>
-    <p>
-      El jugger es un deporte mixto de contacto en el que dos equipos de cinco jugadores, equipados con armas acolchadas, compiten por conseguir una pelota colocada en el centro del campo y llevarla hasta la base del contrario. El juego se desarrolló en su forma actual en Alemania a principios de los años 90, y hoy día es practicado en 30 países de todo el mundo.
-    </p>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S3S2s0Xn3NQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="mt-2">
-      <a class="is-size-4" href="{{ '/es/play' | url }}">Empieza a jugar</a>
-    </p>
-  </div>
-</section>
-<section class="hero is-medium is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        TODO: second image
-      </h1>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">El Consejo Internacional del Jugger</h2>
-    <p>
-      El Consejo Internacional del Jugger (IJC, por sus siglas en inglés) fue constituido el 2 de octubre de 2019 como un organismo representativo para la comunidad mundial del jugger. Sus funciones incluyen debatir y votar acuerdos en materia de reglas, competiciones y cooperación. Actualmente los siguientes países y organizaciones forman parte del IJC:
-    </p>
-    <iframe width="960" height="517" data-original-width="6460" data-original-height="3480" src="https://www.thinglink.com/card/1325051402354950146" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-    <script async src="//cdn.thinglink.me/jse/responsive.js"></script>
-    <p>
-      El Consejo está formado por entre 1 y 3 Representantes de cada país miembro, y los representantes de cada nación comparten un solo voto. El Consejo elige una Junta cada año, la cual convoca reuniones ordinarias cada octubre y abril y sesiones extraordinarias siempre que la situación lo requiera.
-    </p>
-    <p>
-      Una vez que el Consejo ha acordado establecer un nuevo objetivo para el IJC, la Junta crea un Comité para que trabaje en él. Puedes aprender más sobre los fines de los Comités y cómo unirte como voluntario aquí:
-    </p>
-    <p class="mt-2">
-      <a class="is-size-4" href="{{ '/es/about' | url }}">Conócenos mejor</a>
-    </p>
-  </div>
-</section>
+{% from 'macros.njk' import headerHero, pageSection with context %}
+
+<div id="page_index" class="ijc-page">
+  <section>
+    {{ headerHero('what_is_jugger', '¿Qué es el jugger?' ) }}
+    {{ pageSection('what_is_jugger') }}
+  </section>
+
+  <section>
+    {{ headerHero('the_ijc', 'El IJC' ) }}
+    {{ pageSection('the_ijc') }}
+  </section>
+</div>
