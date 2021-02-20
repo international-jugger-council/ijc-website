@@ -3,16 +3,13 @@ layout: base.njk
 pageKey: about
 title: About Us
 ---
-<div id="page_about">
-  <section id="mission_statement" class="hero is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h2>Our mission</h2>
-      </div>
-    </div>
-  </section>
-  <section class="ijc-blurb">
-    <div class="container">
+{% from 'macros.njk' import headerHero %}
+
+<div id="page_about" class="ijc-page">
+  <section>
+    {{ headerHero('mission_statement', 'Our mission' ) }}
+
+    <div class="ijc-blurb container">
       <div class="columns is-desktop">
         <div class="column">
           <article class="message">
@@ -41,9 +38,9 @@ title: About Us
 
       <hr>
 
-      <h3 class="is-size-3 mb-4">Code of Conduct</h3>
       <div class="columns is-desktop">
         <div class="column">
+          <h3 class="is-size-3 mb-4">Code of Conduct</h3>
           <p>
             Do you coach other juggers, promote your club locally, organize tournaments, or otherwise serve as a leader in your local jugger club?  <strong>The IJC Code of Conduct can help you create an safe, enjoyable and inclusive environment</strong> for the sport of jugger.
           </p>
@@ -59,19 +56,13 @@ title: About Us
           </article>
         </div>
       </div>
-
-
     </div>
   </section>
-  <section id="who_we_are" class="hero is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h2>Who we are</h2>
-      </div>
-    </div>
-  </section>
-  <section class="ijc-blurb">
-    <div class="container">
+
+  <section>
+    {{ headerHero('who_we_are', 'Who we are' ) }}
+
+    <div class="ijc-blurb container">
       <p>
         The IJC is a volunteer-run organization, run by juggers who take an interest in supporting and growing the sport of jugger.  If you're interested in learning more, want to help as a volunteer, or have feedback, comments, or questions - contact us!
       </p>

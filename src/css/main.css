@@ -79,15 +79,19 @@ nav {
   min-height: calc(100vh - 52px);
 }
 
-.ijc-blurb {
-  margin: 2.5rem 1rem;
+.ijc-page {
+  margin-top: 1.25rem;
 }
 
-.ijc-blurb > .container p {
+.ijc-blurb.container {
+  padding: 2.5rem 1rem;
+}
+
+.ijc-blurb.container p {
   font-size: 1.25rem;
 }
 
-.ijc-blurb > .container p:not(:last-child) {
+.ijc-blurb.container p:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 

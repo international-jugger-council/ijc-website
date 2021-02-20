@@ -2,16 +2,13 @@
 layout: base.njk
 pageKey: index
 ---
-<div id="page_index">
-  <section id="what_is_jugger" class="hero is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h2>What is jugger?</h2>
-      </div>
-    </div>
-  </section>
-  <section class="ijc-blurb">
-    <div class="container">
+{% from 'macros.njk' import headerHero %}
+
+<div id="page_index" class="ijc-page">
+  <section>
+    {{ headerHero('what_is_jugger', 'What is jugger?' ) }}
+
+    <div class="ijc-blurb container">
       <div class="columns is-desktop">
         <div class="column">
           <p>
@@ -25,17 +22,14 @@ pageKey: index
         <div class="column">
           <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/S3S2s0Xn3NQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </div>
-  </section>
-  <section id="the_ijc" class="hero is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h2>The IJC</h2>
       </div>
     </div>
   </section>
-  <section class="ijc-blurb">
-    <div class="container">
+
+  <section>
+    {{ headerHero('the_ijc', 'The IJC' ) }}
+
+    <div class="ijc-blurb container">
       <div class="columns is-desktop">
         <div class="column">
           <p>

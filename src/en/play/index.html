@@ -3,16 +3,13 @@ layout: base.njk
 pageKey: play
 title: Play Jugger
 ---
-<div id="page_play">
-  <section id="find_a_club" class="hero is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h2>Find a club</h2>
-      </div>
-    </div>
-  </section>
-  <section class="ijc-blurb">
-    <div class="container">
+{% from 'macros.njk' import headerHero %}
+
+<div id="page_play" class="ijc-page">
+  <section>
+    {{ headerHero('find_a_club', 'Find a club' ) }}
+
+    <div class="ijc-blurb container">
       <div class="columns is-desktop">
         <div class="column">
           <p class="is-size-4">
@@ -29,15 +26,11 @@ title: Play Jugger
       </div>
     </div>
   </section>
-  <section id="rules" class="hero is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h2>Rules</h2>
-      </div>
-    </div>
-  </section>
-  <section class="ijc-blurb">
-    <div class="container">
+
+  <section>
+    {{ headerHero('rules', 'Rules' ) }}
+
+    <div class="ijc-blurb container">
       <div class="columns is-desktop">
         <div class="column">
           <p>
@@ -54,15 +47,11 @@ title: Play Jugger
       </div>
     </div>
   </section>
-  <section id="start_a_club" class="hero is-medium is-info is-bold">
-    <div class="hero-body">
-      <div class="container">
-        <h2>Start a club</h2>
-      </div>
-    </div>
-  </section>
-  <section class="ijc-blurb">
-    <div class="container">
+
+  <section>
+    {{ headerHero('start_a_club', 'Start a club' ) }}
+
+    <div class="ijc-blurb container">
       <div class="columns">
         <div class="column">
           <p>
@@ -78,15 +67,11 @@ title: Play Jugger
       </div>
     </div>
   </section>
-  <section id="connect_with_community" class="hero is-medium is-info is-bold">
-    <div class="hero-body">
-      <div class="container">
-        <h2>Connect with the community</h2>
-      </div>
-    </div>
-  </section>
-  <section class="ijc-blurb">
-    <div class="container">
+
+  <section>
+    {{ headerHero('connect_with_community', 'Connect with the community' ) }}
+
+    <div class="ijc-blurb container">
       <p>
         A very important part of the jugger experience is to meet and stay in touch with new people.  Not sure how to do that?  These links will help you <strong>get in contact with your local, national, and international jugger community.</strong>  People in these forums and groups can point you in the right direction.
       </p>
