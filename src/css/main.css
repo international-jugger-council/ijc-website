@@ -60,7 +60,12 @@ article.message {
 }
 
 nav {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.25em;
+}
+
+.navbar-dropdown > .navbar-item {
+  font-size: 1rem;
 }
 
 #ijc_logo {
@@ -183,22 +188,24 @@ nav {
   background-size: cover;
 }
 
-#footer {
-  padding: 30px;
-  padding-bottom: 50px;
-  font-size: .8rem;
+footer {
+  background-color: var(--ijc-grey-light);
+  border-top: 1px solid #beb5b8;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
   width: 100%;
   text-align: center;
 }
 
 #footer-container {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
 .side-img {
-  padding: 10px;
+  padding: 0 2rem;
 }
 
 @media screen and (min-width: 1024px) {

@@ -3,190 +3,26 @@ layout: base.njk
 pageKey: play
 title: Jugger spielen
 ---
-<section id="rules" class="hero is-medium is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        TODO
-      </h1>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">Rules</h2>
-    <p>
-      As of 2020, there isn’t a single, unified ruleset for playing Jugger across the world. There are around 20 different national and local variants, most of which agree on the basics but differ in certain areas like refereeing or the exact measures of the spars.
-    </p>
-    <p>
-      We’re currently working on creating a comparative database for the German, Spanish and Australian rules - in the meantime, check out the International Jugger Blog’s Rulebooks compilation!
-    </p>
-    <p class="mt-2">
-      <a class="is-size-4" href="https://www.juggerblog.net/index.php?/archives/139-International-Jugger-rulebooks-Jugger-Archive-I.html">Check out international rulesets</a>
-    </p>
-  </div>
-</section>
-<section id="find" class="hero is-medium is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        TODO
-      </h1>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">Find a Club</h2>
-    <p class="is-size-4">
-      Jugger can be played almost anywhere!
-    </p>
-    <p>
-      Currently, there are Jugger clubs in thirty countries across Europe, Asia, Oceania and the Americas. Check our Jugger World Map to see if there’s any such group near you - but if there isn’t, grab your friends and start one!
-    </p>
-    <p>
-      <a class="is-size-4" href="{{ '/en/map' | url }}">Browse the map</a>
-    </p>
-  </div>
-</section>
-<section id="start" class="hero is-medium is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        TODO
-      </h1>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">Start a Club</h2>
-    <p>
-      Have you just discovered Jugger and want to bring it closer to home? Are you already a Jugger player and wish to take your favourite sport when you move to a new town? Worry not! We are currently working on a full guide to founding your own club, and another on how to organize Jugger competitions.
-    </p>
-    <p>
-      Meanwhile, here are some collections of useful guides and tips for designing trainings and building spars:
-    </p>
-    <ul class="is-size-4">
-      <li><a href="https://www.facebook.com/groups/256230024938831/">How to Train Your Jugger</a></li>
-      <li><a href="https://www.youtube.com/playlist?list=PLi_wwxAwiC5CKTO_majeyod-CmtPv2nH6">Jugger equipment (video tutorials)</a></li>
-      <li><a href="https://www.facebook.com/groups/1920878784858779">Jugger - Pompfenbau / Spars Making</a></li>
-    </ul>
-  </div>
-</section>
-<section id="connect" class="hero is-medium is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        TODO
-      </h1>
-    </div>
-  </div>
-</section>
-<section class="ijc-blurb">
-  <div class="container has-text-centered">
-    <h2 class="is-size-2">Connect with the community</h2>
-    <p>
-      A very important part of the Jugger experience is to meet and stay in touch with new people.  Not sure how to do that?  These links will help you get in contact with your local, national, and international Jugger community.  People in these forums and groups can point you in the right direction.
-    </p>
-    <div class="columns has-text-left">
+{% from 'macros.njk' import headerHero, pageSection with context %}
 
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ '/img/social/discord.svg' | url }}" alt="Logo: Discord">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Discord</p>
-                <p class="subtitle is-6">
-                  <a href="https://discord.gg/jXqhcYu">Jugger Worldwide</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+<div id="page_play" class="ijc-page">
+  <section>
+    {{ headerHero('find_a_club', 'Finde Verein' ) }}
+    {{ pageSection('find_a_club') }}
+  </section>
 
-        <div class="card mt-5">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ '/img/social/turniere.png' | url }}" alt="Logo: Jugger Turniere">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Team Rankings</p>
-                <p class="subtitle is-6">
-                  <a href="https://turniere.jugger.org/">Jugger Turniere</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section>
+    {{ headerHero('rules', 'Regeln' ) }}
+    {{ pageSection('rules') }}
+  </section>
 
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ '/img/social/facebook.svg' | url }}" alt="Logo: Facebook">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Facebook</p>
-                <p class="subtitle is-6">
-                  <a href="https://www.facebook.com/groups/591614014205606/">Jugger Worldwide</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section>
+    {{ headerHero('start_a_club', 'Gründe Verein' ) }}
+    {{ pageSection('start_a_club') }}
+  </section>
 
-        <div class="card mt-5">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ '/img/social/gsheets.svg' | url }}" alt="Logo: Facebook">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Contact a Team</p>
-                <p class="subtitle is-6">
-                  <a href="https://docs.google.com/spreadsheets/d/1rNvqWBr7cfqOzpgFvFSuqnr1I4IzYezzRSswv11D34A/edit#gid=0">World Jugger Contact List</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ '/img/social/blog.png' | url }}" alt="Logo: The International Jugger Blog">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Blog</p>
-                <p class="subtitle is-6">
-                  <a href="https://juggerblog.net/">The International Jugger Blog</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+  <section>
+    {{ headerHero('connect_with_community', 'Verbinde mit der Community' ) }}
+    {{ pageSection('connect_with_community') }}
+  </section>
+</div>
