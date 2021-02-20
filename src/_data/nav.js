@@ -9,15 +9,15 @@ module.exports = {
     }, {
       label: 'Finde Verein',
       pageKey: 'play',
-      pageSection: 'find',
+      pageSection: 'find_a_club',
     }, {
       label: 'Gründe Verein',
       pageKey: 'play',
-      pageSection: 'start',
+      pageSection: 'start_a_club',
     }, {
       label: 'Verbinde mit der Community',
       pageKey: 'play',
-      pageSection: 'connect',
+      pageSection: 'connect_with_community',
     }],
   }, {
     label: 'Über uns',
@@ -25,11 +25,11 @@ module.exports = {
     items: [{
       label: 'Leitbild',
       pageKey: 'about',
-      pageSection: 'mission',
+      pageSection: 'mission_statement',
     }, {
       label: 'Wer wir sind',
       pageKey: 'about',
-      pageSection: 'who',
+      pageSection: 'who_we_are',
     }, {
       label: 'Jugger-Geschichte',
       href: 'https://youtu.be/LZ1WYXq14u0?t=10005',
@@ -45,27 +45,27 @@ module.exports = {
     }, {
       label: 'Find a Club',
       pageKey: 'play',
-      pageSection: 'find',
+      pageSection: 'find_a_club',
     }, {
       label: 'Start a Club',
       pageKey: 'play',
-      pageSection: 'start',
+      pageSection: 'start_a_club',
     }, {
       label: 'Connect with the Community',
       pageKey: 'play',
-      pageSection: 'connect',
+      pageSection: 'connect_with_community',
     }],
   }, {
     label: 'About Us',
     pageKey: 'about',
     items: [{
-      label: 'Mission Statement',
+      label: 'Our Mission',
       pageKey: 'about',
-      pageSection: 'mission',
+      pageSection: 'mission_statement',
     }, {
       label: 'Who We Are',
       pageKey: 'about',
-      pageSection: 'who',
+      pageSection: 'who_we_are',
     }, {
       label: 'Code of Conduct',
       href: 'https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit?usp=sharing'
@@ -84,15 +84,15 @@ module.exports = {
     }, {
       label: 'Encuentra un Club',
       pageKey: 'play',
-      pageSection: 'find',
+      pageSection: 'find_a_club',
     }, {
       label: 'Funda un Club',
       pageKey: 'play',
-      pageSection: 'start',
+      pageSection: 'start_a_club',
     }, {
       label: 'Conecta con la Comunidad',
       pageKey: 'play',
-      pageSection: 'connect',
+      pageSection: 'connect_with_community',
     }],
   }, {
     label: 'Sobre Nosotros',
@@ -100,11 +100,11 @@ module.exports = {
     items: [{
       label: 'Nuestra misión',
       pageKey: 'about',
-      pageSection: 'mission',
+      pageSection: 'mission_statement',
     }, {
       label: 'Quiénes somos',
       pageKey: 'about',
-      pageSection: 'who',
+      pageSection: 'who_we_are',
     }, {
       label: 'Historia del Jugger',
       href: 'https://youtu.be/LZ1WYXq14u0?t=10005',

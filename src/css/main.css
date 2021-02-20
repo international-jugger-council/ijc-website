@@ -64,8 +64,50 @@ nav {
   font-size: 4rem;
 }
 
-#hero_what_is_jugger::before {
-  background: url('/img/photos/dueling_shields.jpg');
+.hero#connect_with_community::before {
+  background: url('/img/photos/connect_with_community.jpg');
+  background-position: 10%;
+  background-size: cover;
+}
+
+.hero#find_a_club::before {
+  background: url('/img/photos/find_a_club.jpg');
+  background-position: 10%;
+  background-size: cover;
+}
+
+.hero#mission_statement::before {
+  background: url('/img/photos/mission_statement.jpg');
+  background-position: 10%;
+  background-size: cover;
+}
+
+.hero#rules::before {
+  background: url('/img/photos/rules.jpg');
+  background-position: 10%;
+  background-size: cover;
+}
+
+.hero#start_a_club::before {
+  background: url('/img/photos/start_a_club.jpg');
+  background-position: 10%;
+  background-size: cover;
+}
+
+.hero#the_ijc::before {
+  background: url('/img/photos/the_ijc.jpg');
+  background-position: 10%;
+  background-size: cover;
+}
+
+.hero#what_is_jugger::before {
+  background: url('/img/photos/what_is_jugger.jpg');
+  background-position: 10%;
+  background-size: cover;
+}
+
+.hero#who_we_are::before {
+  background: url('/img/photos/who_we_are.jpg');
   background-position: 10%;
   background-size: cover;
 }
