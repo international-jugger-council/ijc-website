@@ -7,3 +7,9 @@
   </div>
 </header>
 {% endmacro %}
+
+{% macro pageSection(id) %}
+<div class="ijc-blurb container">
+  {% include lang + '/' + id + '.njk' %}
+</div>
+{% endmacro %}

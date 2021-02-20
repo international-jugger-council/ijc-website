@@ -3,79 +3,26 @@ layout: base.njk
 pageKey: play
 title: Play Jugger
 ---
-{% from 'macros.njk' import headerHero %}
+{% from 'macros.njk' import headerHero, pageSection with context %}
 
 <div id="page_play" class="ijc-page">
   <section>
     {{ headerHero('find_a_club', 'Find a club' ) }}
-
-    <div class="ijc-blurb container">
-      <div class="columns is-desktop">
-        <div class="column">
-          <p class="is-size-4">
-            Jugger can be played almost anywhere!
-          </p>
-          <p>
-            There are jugger clubs in <strong>thirty countries across Europe, Asia, Oceania and the Americas</strong>. Check our Jugger World Map to see if there’s any such group near you - but if there isn’t, grab your friends and start one!
-          </p>
-          <p class="is-size-3">
-            <a href="{{ '/en/map' | url }}">Browse the map</a>
-          </p>
-        </div>
-        <div class="column"></div>
-      </div>
-    </div>
+    {{ pageSection('find_a_club') }}
   </section>
 
   <section>
     {{ headerHero('rules', 'Rules' ) }}
-
-    <div class="ijc-blurb container">
-      <div class="columns is-desktop">
-        <div class="column">
-          <p>
-            As a sport, <strong>Jugger is a work in progress: we don't yet have a single global ruleset!</strong> There are around 20 different national and local variants.  Most of these variants agree on basic rules, but there are differences in areas like refereeing and dimensions of equipment.
-          </p>
-          <p>
-            The most widely used rulesets are the German, Spanish, and Australian rulesets.  We're currently working on a tool to help players understand these different rulesets - in the meantime, check out the International Jugger Blog’s Rulebooks compilation!
-          </p>
-          <p class="is-size-3">
-            <a href="https://www.juggerblog.net/index.php?/archives/139-International-Jugger-rulebooks-Jugger-Archive-I.html">Check out international rulesets</a>
-          </p>
-        </div>
-        <div class="column"></div>
-      </div>
-    </div>
+    {{ pageSection('rules') }}
   </section>
 
   <section>
     {{ headerHero('start_a_club', 'Start a club' ) }}
-
-    <div class="ijc-blurb container">
-      <div class="columns">
-        <div class="column">
-          <p>
-            Have you just discovered jugger and want to bring it closer to home? Are you already a jugger player and wish to take your favourite sport when you move to a new town?
-          </p>
-          <p>
-            We've linked to some <strong>useful guides and tutorials</strong> to help you get started.
-          </p>
-        </div>
-        <div class="column">
-          {% include 'startClubResources.njk' %}
-        </div>
-      </div>
-    </div>
+    {{ pageSection('start_a_club') }}
   </section>
 
   <section>
     {{ headerHero('connect_with_community', 'Connect with the community' ) }}
-
-    <div class="ijc-blurb container">
-      <p>
-        A very important part of the jugger experience is to meet and stay in touch with new people.  Not sure how to do that?  These links will help you <strong>get in contact with your local, national, and international jugger community.</strong>  People in these forums and groups can point you in the right direction.
-      </p>
-      {% include 'connectCommunity.njk' %}
-    </div>
+    {{ pageSection('connect_with_community') }}
   </section>
 </div>
