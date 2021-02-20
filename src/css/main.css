@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Clean Sports";
 }
 
+a {
+  font-weight: bold;
+}
+
 #ijc_modal_lang_warning .modal-card-foot {
   justify-content: flex-end;
 }
