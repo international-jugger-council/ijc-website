@@ -75,7 +75,7 @@ module.exports = {
     }],
   }],
   es: [{
-    label: 'Jugar Jugger',
+    label: 'Juega al Jugger',
     pageKey: 'play',
     items: [{
       label: 'Encuentra un Club',
