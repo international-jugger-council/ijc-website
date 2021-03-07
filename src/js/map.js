@@ -95,7 +95,7 @@ function initMap() {
     var info_window_string = `<div id="content">`;
     if (club_data[logo_col]) {
       // if we have a logo to show, jam everything into a table and put the logo on one side of it.
-      info_window_string += `<table><tr><td style="padding-right:15px"><img src= ${club_data[logo_col]}></td><td>`
+      info_window_string += `<table><tr><td style="padding-right:15px;background-image:url(${club_data[logo_col]});background-repeat:no-repeat;width:150px;height:150px;background-size:contain;background-position:center;"></td><td>`
     }
     info_window_string += `
       <h1 id="firstHeading" class="firstHeading">
