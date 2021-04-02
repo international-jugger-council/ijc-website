@@ -31,6 +31,9 @@ module.exports = {
       pageKey: 'about',
       pageSection: 'who_we_are',
     }, {
+      label: 'IJC-Verhaltenskodex',
+      href: 'https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit?usp=sharing'
+    }, {
       label: 'Jugger-Geschichte',
       href: 'https://youtu.be/LZ1WYXq14u0?t=10005',
     }],
@@ -105,6 +108,9 @@ module.exports = {
       label: 'Quiénes somos',
       pageKey: 'about',
       pageSection: 'who_we_are',
+    }, {
+      label: 'Código de Conducta IJC',
+      href: 'https://docs.google.com/document/d/1p4N-S5HPWDjFHrXlJti3NGP0Y7t1Co1eXSUAdVn0-ig/edit'
     }, {
       label: 'Historia del Jugger',
       href: 'https://youtu.be/LZ1WYXq14u0?t=10005',
