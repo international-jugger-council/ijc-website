@@ -15,7 +15,7 @@ module.exports = {
       pageKey: 'play',
       pageSection: 'start_a_club',
     }, {
-      label: 'Verbinde mit der Community',
+      label: 'Sag »Hallo!«',
       pageKey: 'play',
       pageSection: 'connect_with_community',
     }],
