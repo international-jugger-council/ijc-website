@@ -1,8 +1,8 @@
 module.exports = {
   buildTime: new Date(),
   de: {
-    metaTitle: 'Der Internationaler Rat der Jugger',
-    metaDescription: 'Der International Jugger Council (IJC) ist eine Vertretung der weltweiten Jugger-Community.',
+    metaTitle: 'Das International Jugger Council',
+    metaDescription: 'Das International Jugger Council (IJC) ist eine Vertretung der weltweiten Jugger-Community.',
     navLanguage: 'Sprache',
   },
   en: {
