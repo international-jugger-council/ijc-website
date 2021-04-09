@@ -91,6 +91,12 @@ function initMap() {
       image = 'IJC_map_pin_youth.png'
     }
 
+    if (club_data[youth_col] == 'FALSE' && club_data[active_col] == 'TRUE' && club_data[armored_col] == 'FALSE') {
+      if (! showNormal) {
+        return;
+      }
+    }
+
     // otherwise, make a marker for it
     var info_window_string = `<div id="content">`;
     if (club_data[logo_col]) {
@@ -166,6 +172,7 @@ function initMap() {
 var showInactive = getQueryVariable('showInactive');
 var showArmored = getQueryVariable('showArmored');
 var showYouth = getQueryVariable('showYouth');
+var showNormal = getQueryVariable('showNormal');
 
 function setShowInactive() {
   showInactive = document.getElementById("showInactive").checked;
@@ -177,5 +184,9 @@ function setShowArmored() {
 }
 function setShowYouth() {
   showYouth = document.getElementById("showYouth").checked;
+  initMap();
+}
+function setShowNormal() {
+  showNormal = document.getElementById("showNormal").checked;
   initMap();
 }
