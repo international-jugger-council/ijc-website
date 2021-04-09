@@ -55,11 +55,4 @@ Ideally the pull request should be reviewed by someone else.  That said: getting
 
 ## Deploy!
 
-You probably won't have to do this if you're not the maintainer.  That said, this is how we deploy the IJC website:
-
-1. `git clone` this repo on your favourite server;
-2. `npm install`;
-3. `npm run build`;
-4. Use `nginx` or what have you to serve the `_site` folder.
-
-Note that we're serving the `_site` folder, _not_ the repository itself.  We don't really care that much about source code disclosure (our website is open-source!), but there's also no reason to expose the `.git` directory.
+The site is automatically deployed every time the `master` branch is updated.
