@@ -5,12 +5,15 @@ html, body {
 }
 
 .jersey-header {
-    padding: 10 10 10 10;
+    padding: 10px;
 }
 
 .jersey-thumbnail {
     height: 300px;
     width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .jersey-name {

@@ -68,10 +68,8 @@ function displayJerseys() {
     // put it together
     var jersey_html = `<article class="jersey-article">
       <header class="jersey-header">
-        <div class="jersey-thumbnail">
-          <img src="${jersey_data[front_image_col]}"/>
-        </div>
-        <h2 class="jersey-name">${jersey_data[team_col]}, ${jersey_data[year_col]}</h2>
+        <div class="jersey-thumbnail" style="background-image:url(${jersey_data[front_image_col]})"></div>
+        <h2 class="jersey-name">${jersey_data[team_col]}, ${jersey_data[country_col]} (${jersey_data[year_col]})</h2>
         <h2 class="jersey-name">designed by ${jersey_data[designer_col]}</h2>
       </header>
     </article>`;
