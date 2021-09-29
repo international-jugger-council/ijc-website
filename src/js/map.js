@@ -1,7 +1,7 @@
 // spreadsheet location from url
 var SPREADSHEET_KEY = '1KHNrKrpunvWNaGVStFhj7Ra2EC_kgK8sZQsxa2yiJuk';
 // API key from the developer console
-var API_KEY = 'AIzaSyAtjfgtWoGNkp5Uc2XQ7kh3Po3wfXY-R4U';
+var API_KEY = 'AIzaSyB3vQlyGRJewsVWhQPisU8rcbfjZ7GTm7E';
 // this is an extremely aggressive range. :D
 var RANGE = 'A1:ZZ10000'
 var spreadsheet_url =  `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_KEY}/values/${RANGE}?key=${API_KEY}`
@@ -170,7 +170,14 @@ function initMap() {
   var markerCluster = new MarkerClusterer(map, markers,
       {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
-  describe_map(map, markers, markerCluster);
+
+  google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
+    //this part runs when the mapobject is created and rendered
+        describe_map(map, markers, markerCluster);
+    google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
+        //this part runs when the mapobject shown for the first time
+    });
+});
 }
 
 var showInactive = getQueryVariable('showInactive');
@@ -197,5 +204,6 @@ function setShowNormal() {
 
 function describe_map(map, markers, markerCluster) {
   var description_spot = document.getElementById("description");
-  description_spot.innerText = ""
+  description_spot.innerText = `Map boundaries are (${map.getBounds().La.g.toFixed(2)},${map.getBounds().La.i.toFixed(2)}) (latitude) and (${map.getBounds().Ta.g.toFixed(2)},${map.getBounds().Ta.i}.toFixed(2)) (longitude).
+  The map shows ${markers.length} points in ${markerCluster.clusters_.length} clusters.`
 }
