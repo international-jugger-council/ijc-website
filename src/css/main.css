@@ -170,6 +170,12 @@ nav {
   background-size: cover;
 }
 
+.hero#jersey_gallery::before {
+  background: url('/img/photos/jersey_gallery.jpg');
+  background-position-y: 70%;
+  background-size: cover;
+}
+
 .hero#the_ijc::before {
   background: url('/img/photos/the_ijc.jpg');
   background-position-y: 50%;
