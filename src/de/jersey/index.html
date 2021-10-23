@@ -1,0 +1,47 @@
+---
+cssIncludes:
+  - /css/jersey.css
+jsIncludes:
+  - /js/jerseys.js
+layout: base.njk
+pageKey: jersey_gallery
+title: Jersey Gallery
+---
+{% from 'macros.njk' import headerHero, pageSection with context %}
+
+{{ headerHero('jersey_gallery', 'Jersey Gallery' ) }}
+<a href="https://forms.gle/E4Yxa4apLfZfawTh6">Add your jerseys!</a>
+<br/>
+<div id="controls">
+  <form id="display_control" onchange="displayJerseys();">
+    <div class="control">
+      <label for="sort">Sort jerseys by</label>
+      <select name="sort" id="sort">
+        <option value="alph_desc">team A-Z</option>
+        <option value="alph_asc">team Z-A</option>
+        <option value="country_desc">country A-Z</option>
+        <option value="country_asc">country Z-A</option>
+        <option value="designer_desc">designer A-Z</option>
+        <option value="designer_asc">designer Z-A</option>
+        <option value="time_desc">oldest-newest</option>
+        <option value="time_asc">newest-oldest</option>
+      </select>
+    </div>
+    <div class="control">
+      <label class="radio">
+        <input type="radio" name="show" value="show_fronts" checked>
+        Show jersey fronts
+      </label>
+      <label class="radio">
+        <input type="radio" name="show" value="show_backs">
+        Show jersey backs
+      </label>
+    </div>
+  </form>
+</div>
+<div id="gallery"></div>
+  <br/>
+  <a href="https://forms.gle/E4Yxa4apLfZfawTh6">Add your jerseys!</a>
+  <br/>
+
+<pre id="content" style="white-space: pre-wrap;"></pre>

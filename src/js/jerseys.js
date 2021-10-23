@@ -1,7 +1,7 @@
 // spreadsheet location from url
 var SPREADSHEET_KEY = '1Zln1U0aAe0mtd5SxfXATBioMezG4Lg6qcoJzePDksXs';
 // API key from the developer console
-var API_KEY = 'AIzaSyB3vQlyGRJewsVWhQPisU8rcbfjZ7GTm7E';
+var API_KEY = 'AIzaSyAtjfgtWoGNkp5Uc2XQ7kh3Po3wfXY-R4U';
 // this is an extremely aggressive range. :D
 var RANGE = "'processed'!A1:ZZ10000"
 var spreadsheet_url =  `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_KEY}/values/${RANGE}?key=${API_KEY}`
@@ -76,7 +76,7 @@ function displayJerseys() {
   sort_by_chosen();
 
   // Add ze jerseys to ze gallery.
-  var jersey_gallery_html = spreadsheet_data.slice(1).map(function(jersey_data, i) {
+  var jersey_gallery_html = spreadsheet_data.map(function(jersey_data, i) {
 
     if (jersey_data[checked_col] == '') {
       // only display jerseys that someone has validated
