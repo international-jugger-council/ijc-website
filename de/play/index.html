@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das International Jugger Council</title>
+    <meta name="description" content="Das International Jugger Council (IJC) ist eine Vertretung der weltweiten Jugger-Community.">
+
+    <link rel="icon" type="image/svg+xml" href="/img/logo/logo_icon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <script src="https://kit.fontawesome.com/b248b23f0a.js" crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB57JV9T5D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BB57JV9T5D');
+    </script>
+  </head>
+  <body>
+    <div id="ijc_modal_lang_warning" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <div class="modal-card-title">Translation in progress!</div>
+        </header>
+        <section class="modal-card-body">
+          <p>
+            We're working to translate the IJC website into a variety of languages - it's a resource for the global Jugger community, and we believe that the languages available here should reflect that!
+          </p>
+
+          <p>
+            If you'd like to help us translate this website into a language you're fluent in, contact us on Discord or via email:
+          </p>
+
+          <div class="card mt-5">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="/img/social/discord.svg" alt="Logo: Discord">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Discord</p>
+                  <p class="subtitle is-6">
+                    <a href="https://discord.gg/jXqhcYu">Jugger Worldwide</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="/img/social/gmail.svg" alt="Logo: GMail">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Email</p>
+                  <p class="subtitle is-6">
+                    <a href="mailto:juggerinternational@gmail.com">juggerinternational@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button
+            class="button is-success is-pulled-right"
+            onclick="closeModalLangWarning()">OK</button>
+        </footer>
+      </div>
+    </div>
+
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img id="ijc_logo" src="/img/logo/logo_horizontal_no_text.png" alt="Das International Jugger Council">
+          <h1>Das International Jugger Council</h1>
+        </a>
+
+        <button
+          role="button"
+          class="button navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar_menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="navbar_menu" class="navbar-menu">
+        <div class="navbar-start"></div>
+
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+  <a class="navbar-link">
+    Sprache
+  </a>
+  <div class="navbar-dropdown is-right">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <a
+        class="navbar-item"
+        href="/de/play/">
+        🇩🇪 Deutsch
+      </a>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <a
+        class="navbar-item"
+        href="/en/play/">
+        🇬🇧 English
+      </a>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+      <a
+        class="navbar-item"
+        href="/es/play/">
+        🇪🇸 Español
+      </a>
+    
+  </div>
+</div>
+
+          
+  <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <a class="navbar-link" href="/de/play/">
+        <span>Jugger spielen</span>
+      </a>
+    
+    <div class="navbar-dropdown is-right">
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#find_a_club">
+            <span>Finde Verein</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#rules">
+            <span>Regeln</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#start_a_club">
+            <span>Gründe Verein</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#connect_with_community">
+            <span>Sag »Hallo!«</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#jersey_gallery">
+            <span>Trikot-Galerie</span>
+          </a>
+        
+      
+    </div>
+  </div>
+
+  <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <a class="navbar-link" href="/de/about/">
+        <span>Über uns</span>
+      </a>
+    
+    <div class="navbar-dropdown is-right">
+      
+        
+          
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/about/#mission_statement">
+            <span>Leitbild</span>
+          </a>
+        
+      
+        
+          
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/about/#who_we_are">
+            <span>Wer wir sind</span>
+          </a>
+        
+      
+        
+          <a class="navbar-item" href="https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit?usp=sharing">
+            <span>IJC-Verhaltenskodex </span>
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </a>
+        
+      
+        
+          <a class="navbar-item" href="https://youtu.be/LZ1WYXq14u0?t=10005">
+            <span>Jugger-Geschichte </span>
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </a>
+        
+      
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+    </nav>
+
+    
+
+<div id="page_play" class="ijc-page">
+  <section>
+    
+<header id="find_a_club" class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h2>Finde Verein</h2>
+    </div>
+  </div>
+</header>
+
+    
+<div class="ijc-blurb container">
+  <div class="columns is-desktop">
+  <div class="column">
+    <p class="is-size-4">
+      Jugger wird an immer mehr Orten auf der Welt gespielt!
+    </p>
+    <p>
+      Heute gibt es bereits Juggervereine und -gruppen in <strong>30 Ländern in Europa, Asien, Ozeanien und Amerika</strong>. Auf der Jugger-Weltkarte des IJC können Gruppen in der Nähe gefunden werden. Falls es noch keine gibt – dann ist es höchste Zeit, eine eigene ins Leben zu rufen!
+    </p>
+    <p class="is-size-3 is-size-4-mobile">
+      <a href="/de/map">Karte durchsuchen</a>
+    </p>
+  </div>
+  <div class="column">
+    <a href="/de/map">
+      <img src="/img/map/jugger_map_preview.png" />
+    </a>
+  </div>
+</div>
+
+</div>
+
+  </section>
+
+  <section>
+    
+<header id="rules" class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h2>Regeln</h2>
+    </div>
+  </div>
+</header>
+
+    
+<div class="ijc-blurb container">
+  <div class="columns is-desktop">
+  <div class="column">
+    <p>
+      2020 gibt es weltweit noch <strong>kein weltweit einheitliches Juggerregelwerk.</strong> Es bestehen rund 20 verschiedene nationale und lokale Regelwerke, von denen sich die meisten in den Grundregeln gleichen, sich jedoch in bestimmten Bereichen unterscheiden, wie beispielsweise in der Länge oder Ausgestaltung von Spielgeräten und Jugg.
+    </p>
+    <p>
+      Wir arbeiten derzeit an der Erstellung einer Vergleichsdatenbank für die deutschen, spanischen und australischen Regeln. Zum Vergleich können die Regelwerke im Regelarchiv des International Jugger Blog herangezogen werden:
+    </p>
+    <p class="is-size-3 is-size-4-mobile">
+      <a href="https://www.juggerblog.net/index.php?/archives/139-International-Jugger-rulebooks-Jugger-Archive-I.html">Check die internationalen Regeln</a>
+    </p>
+  </div>
+  <div class="column">
+    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/S3S2s0Xn3NQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+</div>
+
+</div>
+
+  </section>
+
+  <section>
+    
+<header id="start_a_club" class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h2>Gründe Verein</h2>
+    </div>
+  </div>
+</header>
+
+    
+<div class="ijc-blurb container">
+  <div class="columns">
+  <div class="column">
+    <p>
+      Möchtest du eine eigene Juggergruppe gründen? Bist du bereits ein Jugger und möchtest deinen Lieblingssport auch dann noch ausüben, wenn du in eine neue Stadt ohne eigenen Juggerverein ziehst? Kein Problem!
+    </p>
+    <p>
+      Hier gibt es einige Sammlungen nützlicher <strong>Anleitungen und Tipps</strong> zum Planen von Trainings und zum Erstellen von Pompfen.
+    </p>
+  </div>
+  <div class="column">
+    <ul class="is-size-3 is-size-4-mobile">
+  <li><a href="/files/Jugger_101_Final.pdf">IJC Guide to Starting a Jugger Team</a></li>
+  <li><a href="https://www.youtube.com/watch?v=YUux9tX0g8A">How to Start Your Own Jugger Team</a></li>
+  <li><a href="https://www.facebook.com/groups/256230024938831/">How to Train Your Jugger</a></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLi_wwxAwiC5CKTO_majeyod-CmtPv2nH6">Jugger equipment (video tutorials)</a></li>
+  <li><a href="https://www.facebook.com/groups/1920878784858779">Jugger - Pompfenbau / Spars Making</a></li>
+</ul>
+
+  </div>
+</div>
+
+</div>
+
+  </section>
+
+  <section>
+    
+<header id="connect_with_community" class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h2>Sag »Hallo!«</h2>
+    </div>
+  </div>
+</header>
+
+    
+<div class="ijc-blurb container">
+  <p>
+  Am besten läßt es sich juggern, wenn man sich mit anderen darüber austauschen kann. Nicht sicher, wie das geht? Diese Links helfen dir, <strong>mit deiner lokalen, nationalen und internationalen Jugger-Gemeinde in Kontakt zu treten</strong>. In diesen Foren und Gruppen findest du Hilfe.
+</p>
+<div class="columns is-desktop is-multiline">
+  <div class="column is-half-desktop">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/img/social/discord.svg" alt="Logo: Discord">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title">Discord</p>
+            <p class="subtitle">
+              <a href="https://discord.gg/jXqhcYu">Jugger Worldwide</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-half-desktop">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/img/social/facebook.svg" alt="Logo: Facebook">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title">Facebook</p>
+            <p class="subtitle">
+              <a href="https://www.facebook.com/groups/591614014205606/">Jugger Worldwide</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-half-desktop">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/img/social/blog.png" alt="Logo: The International Jugger Blog">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title">Blog</p>
+            <p class="subtitle">
+              <a href="https://juggerblog.net/">The International Jugger Blog</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-half-desktop">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/img/social/turniere.png" alt="Logo: Jugger Turniere">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title">Team Rankings</p>
+            <p class="subtitle">
+              <a href="https://turniere.jugger.org/">Jugger Turniere</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-half-desktop">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/img/social/gsheets.svg" alt="Logo: Facebook">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title">Contact a Team</p>
+            <p class="subtitle">
+              <a href="https://docs.google.com/spreadsheets/d/1rNvqWBr7cfqOzpgFvFSuqnr1I4IzYezzRSswv11D34A/edit#gid=0">World Jugger Contact List</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+
+  </section>
+
+  <section>
+    
+<header id="jersey_gallery" class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h2>Ausstattungsgallerie</h2>
+    </div>
+  </div>
+</header>
+
+    
+<div class="ijc-blurb container">
+  <div class="columns is-desktop">
+  <div class="column">
+    <p class="is-size-4">
+      Juggern sind stilvoll! Seit dem Anbruch vom Jugger als Sport, haben viele kreative Juggern tolle Uniformen für ihre Mannschaften entworfen. Im Jugger ist es auch Tradition, Trikots mit Spielern zu tauschen, die man nach einem Turnier respektiert oder bewundert. Stöbern Sie in der Galerie und sehen Sie sich etwas über die Geschichte der Jugger-Mode an oder reichen Sie Trikots ein, die wir vermissen!
+    </p>
+    <p class="is-size-3 is-size-4-mobile">
+      <a href="/de/jersey">Schau die Ausstattungsgalerie an!</a>
+    </p>
+    <p class="is-size-3 is-size-4-mobile">
+      <a href="https://forms.gle/E4Yxa4apLfZfawTh6">Reich deine Ausstattung ein!</a>
+    </p>
+  </div>
+  <div class="column">
+    <a href="/de/jersey">
+      <img src="/img/photos/jersey_gallery.jpg" />
+    </a>
+  </div>
+</div>
+
+</div>
+
+  </section>
+</div>
+
+
+    <script src="/js/main.js"></script>
+    
+
+    <footer>
+      <div id="footer-container">
+        <div class="side-img">
+          <img src="/img/logo/logo_left.svg">
+        </div>
+        <div>
+          Verbinde dich mit dem IJC bei <a href="https://discord.gg/jXqhcYu">Discord</a> oder per <a href="mailto://juggerinternational@gmail.com">E-mail</a><br/><br/>
+<a href="https://github.com/international-jugger-council/ijc-website/blob/master/CONTRIBUTORS.md">Siehe Webseite-Mitarbeiters</a><br/>
+
+        </div>
+        <div class="side-img">
+          <img src="/img/logo/logo_right.svg">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

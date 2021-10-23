@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das International Jugger Council</title>
+    <meta name="description" content="Das International Jugger Council (IJC) ist eine Vertretung der weltweiten Jugger-Community.">
+
+    <link rel="icon" type="image/svg+xml" href="/img/logo/logo_icon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <script src="https://kit.fontawesome.com/b248b23f0a.js" crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB57JV9T5D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BB57JV9T5D');
+    </script>
+  </head>
+  <body>
+    <div id="ijc_modal_lang_warning" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <div class="modal-card-title">Translation in progress!</div>
+        </header>
+        <section class="modal-card-body">
+          <p>
+            We're working to translate the IJC website into a variety of languages - it's a resource for the global Jugger community, and we believe that the languages available here should reflect that!
+          </p>
+
+          <p>
+            If you'd like to help us translate this website into a language you're fluent in, contact us on Discord or via email:
+          </p>
+
+          <div class="card mt-5">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="/img/social/discord.svg" alt="Logo: Discord">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Discord</p>
+                  <p class="subtitle is-6">
+                    <a href="https://discord.gg/jXqhcYu">Jugger Worldwide</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="/img/social/gmail.svg" alt="Logo: GMail">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Email</p>
+                  <p class="subtitle is-6">
+                    <a href="mailto:juggerinternational@gmail.com">juggerinternational@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button
+            class="button is-success is-pulled-right"
+            onclick="closeModalLangWarning()">OK</button>
+        </footer>
+      </div>
+    </div>
+
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img id="ijc_logo" src="/img/logo/logo_horizontal_no_text.png" alt="Das International Jugger Council">
+          <h1>Das International Jugger Council</h1>
+        </a>
+
+        <button
+          role="button"
+          class="button navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar_menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="navbar_menu" class="navbar-menu">
+        <div class="navbar-start"></div>
+
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+  <a class="navbar-link">
+    Sprache
+  </a>
+  <div class="navbar-dropdown is-right">
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <a
+        class="navbar-item"
+        href="/de/about/">
+        🇩🇪 Deutsch
+      </a>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <a
+        class="navbar-item"
+        href="/en/about/">
+        🇬🇧 English
+      </a>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <a
+        class="navbar-item"
+        href="/es/about/">
+        🇪🇸 Español
+      </a>
+    
+  </div>
+</div>
+
+          
+  <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <a class="navbar-link" href="/de/play/">
+        <span>Jugger spielen</span>
+      </a>
+    
+    <div class="navbar-dropdown is-right">
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#find_a_club">
+            <span>Finde Verein</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#rules">
+            <span>Regeln</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#start_a_club">
+            <span>Gründe Verein</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#connect_with_community">
+            <span>Sag »Hallo!«</span>
+          </a>
+        
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/play/#jersey_gallery">
+            <span>Trikot-Galerie</span>
+          </a>
+        
+      
+    </div>
+  </div>
+
+  <div class="navbar-item has-dropdown is-hoverable" tabindex="0">
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      <a class="navbar-link" href="/de/about/">
+        <span>Über uns</span>
+      </a>
+    
+    <div class="navbar-dropdown is-right">
+      
+        
+          
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/about/#mission_statement">
+            <span>Leitbild</span>
+          </a>
+        
+      
+        
+          
+          
+            
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+          <a class="navbar-item" href="/de/about/#who_we_are">
+            <span>Wer wir sind</span>
+          </a>
+        
+      
+        
+          <a class="navbar-item" href="https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit?usp=sharing">
+            <span>IJC-Verhaltenskodex </span>
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </a>
+        
+      
+        
+          <a class="navbar-item" href="https://youtu.be/LZ1WYXq14u0?t=10005">
+            <span>Jugger-Geschichte </span>
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </a>
+        
+      
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+    </nav>
+
+    
+
+<div id="page_about" class="ijc-page">
+  <section>
+    
+<header id="mission_statement" class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h2>Leitbild</h2>
+    </div>
+  </div>
+</header>
+
+    
+<div class="ijc-blurb container">
+  <div class="columns is-desktop">
+  <div class="column">
+    <article class="message">
+      <div class="message-body has-text-left is-size-5">
+        <p>
+          Wir wollen wissen, wo Jugger gespielt wird, wie es gespielt wird und was die Jugger-Gruppen von uns brauchen, um zu wachsen.
+        </p>
+        <p class="mt-2">
+          Wir wollen Experten und Freiwillige aus der ganzen Welt zusammenbringen, um alle Materialien und Vereinbarungen bereitzustellen, die zur ihrer Unterstützung erforderlich sind.
+        </p>
+        <p class="mt-2">
+          Wir wollen es einfacher machen, mit anderen Juggern aus der ganzen Welt zu konkurrieren.
+        </p>
+      </div>
+    </article>
+  </div>
+  <div class="column">
+    <p>
+      <strong>Am 2. Oktober 2019 nahm das IJC seine erste Charta an:</strong>
+    </p>
+    <p class="mt-4 is-size-3 is-size-4-mobile">
+      <a href="https://docs.google.com/document/d/1SUXlLNPV6Kx9I2xVxt3OhHyd2PUB94KuWtNW8JV0xo0/edit?usp=sharing">IJC-Charta</a>
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<div class="columns is-desktop">
+  <div class="column">
+    <h3 class="is-size-3 mb-4">Verhaltenskodex</h3>
+    <p>
+      Trainierst du andere Jugger, förderst du deinen Club vor Ort, organisierst du Turniere oder bekleidest du auf andere Weise eine Führungsposition in deiner lokalen Jugger-Organisation? Der IJC-Verhaltenskodex bietet einen nützlichen Ausgangspunkt, um <strong>ein sicheres, angenehmes und integratives Umfeld für den Jugger-Sport zu schaffen</strong>.
+    </p>
+    <p class="is-size-3 is-size-4-mobile">
+      <a href="https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit">IJC-Verhaltenskodex</a>
+    </p>
+  </div>
+  <div class="column">
+    <article class="message">
+      <div class="message-body has-text-left is-size-5">
+        The purpose of this Code of Conduct is to outline the International Jugger Council’s (IJC) commitment to an environment free from inappropriate behaviour, specifically Bullying, Violence, Harassment, Discrimination, Sexual Harassment and Victimisation, and provide a clear and simple incident and complaint handling procedure.
+      </div>
+    </article>
+  </div>
+</div>
+
+</div>
+
+  </section>
+
+  <section>
+    
+<header id="who_we_are" class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h2>Wer wir sind</h2>
+    </div>
+  </div>
+</header>
+
+    
+<div class="ijc-blurb container">
+  <p>
+  Das IJC ist eine nichtkommerzielle Organisation, die von Juggern geleitet wird, die sich für die Unterstützung und das Wachstum des Jugger-Sports interessieren. Wenn du mehr erfahren, als Freiwilliger helfen möchtest oder Feedback, Kommentare oder Fragen hast – zögere nicht, uns zu kontaktieren!
+</p>
+<div class="columns is-desktop is-multiline">
+  <div class="column is-half-desktop">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/img/social/discord.svg" alt="Logo: Discord">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title">Discord</p>
+            <p class="subtitle">
+              <a href="https://discord.gg/jXqhcYu">Jugger Worldwide</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-half-desktop">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/img/social/gmail.svg" alt="Logo: GMail">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title">Email</p>
+            <p class="subtitle">
+              <a href="mailto:juggerinternational@gmail.com">juggerinternational@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<div class="columns is-desktop">
+  <div class="column">
+    <h3 class="is-size-3 mb-4">Unterstütze uns!</h3>
+    <p>
+      Es gibt keine Mitgliedsbeiträge - das IJC ist ein nichtkommerzielles Forum und wird durch Einzelspenden finanziert. Wenn dir die Ziele gefallen, an denen wir arbeiten, kannst du uns unterstützen, indem du einen kleinen Geldbetrag auf unser Konto überweist. Um die Bankdaten zu erhalten, setz dich einfach per Discord oder E-Mail mit der Schatzmeisterin in Verbindung.
+    </p>
+    <p>
+      Wir können deinen Namen (oder den Namen deiner Organisation) in unsere Liste der Hauptgebern aufnehmen. Anonyme Spenden werden ebenfalls akzeptiert.
+    </p>
+  </div>
+  <div class="column">
+    <h4 class="is-size-3 mb-4">Hauptsponsoren</h4>
+    <ul class="is-size-4 mb-6">
+  <li>🇱🇹 Pijus “Pope” Stankevičius</li>
+  <li>🇪🇸 Arturo Pérez Amores</li>
+  <li>🇨🇦 Valkyrie and Evan Savage</li>
+  <li>🇨🇷 María Chavarría</li>
+</ul>
+
+  </div>
+</div>
+
+<hr>
+
+<h3 class="is-size-3 mb-4">Wie das IJC funktioniert</h3>
+<div class="columns">
+  <div class="column">
+    <p>
+      Das International Jugger Council (IJC) wurde am 2. Oktober 2019 als Vertretung für die weltweite Jugger-Gemeinschaft gegründet. Zu ihren Aufgaben gehören Erörterung und Abstimmung von Regelfragen, des Wettbewerbs und der Zusammenarbeit. Diese Karte zeigt Länder und Organisationen Mitglieder des IJC.
+    </p>
+    <p>
+      Der Rat besteht aus 1-3 Vertreterinnen und Vertretern seiner Mitgliedsländer, die sich jeweils eine Stimme teilen. Der Rat wählt jedes Jahr einen Vorstand, der im Oktober und April ordentliche Sitzungen einberuft. Bei Bedarf können außerordentliche Sitzungen einberufen werden.
+    </p>
+    <p>
+      Wenn der Rat sich auf ein neues Thema geeinigt hat, wird durch den Vorstand ein Komitee eingesetzt.
+    </p>
+  </div>
+  <div class="column">
+    <iframe width="960" height="517" data-original-width="6460" data-original-height="3480" src="https://www.thinglink.com/card/1325051402354950146" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+    <script async src="//cdn.thinglink.me/jse/responsive.js"></script>
+  </div>
+</div>
+
+<hr>
+
+<h3 class="is-size-3 mb-4">IJC-Vorstand</h3>
+<p>
+  Der Vorstand ist verantwortlich für die Verwaltung des IJC. In alphabetischer Reihenfolge sind die aktuellen Mitglieder:
+</p>
+<table class="table is-fullwidth is-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th>Position(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wendy J-M</td>
+      <td>Australia</td>
+      <td>President, Rules Comparison Commissioner</td>
+    </tr>
+    <tr>
+      <td>Gabriel Maynard Hernández</td>
+      <td>Costa Rica</td>
+      <td>Growth Support Commissioner</td>
+    </tr>
+    <tr>
+      <td>Gil Richard</td>
+      <td>Canada</td>
+      <td>Mapping Commissioner</td>
+    </tr>
+    <tr>
+      <td>Ian Williams</td>
+      <td>USA</td>
+      <td>International Competition Commissioner</td>
+    </tr>
+    <tr>
+      <td>Miguel Alvarado</td>
+      <td>USA</td>
+      <td>Vice-President, Ethics Committee Commissioner</td>
+    </tr>
+    <tr>
+      <td>Pijus “Pope” Stankevičius</td>
+      <td>Lithuania</td>
+      <td>Legal Support Commissioner</td>
+    </tr>
+    <tr>
+      <td>Rickhard “Link” Nilsén</td>
+      <td>Sweden</td>
+      <td>Secretary</td>
+    </tr>
+    <tr>
+      <td>Valkyrie Savage</td>
+      <td>Canada</td>
+      <td>Web Presence Commissioner, Corporate Image Commissioner</td>
+    </tr>
+    <tr>
+      <td>Chris Wilcoxson</td>
+      <td>USA</td>
+      <td>Treasurer</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+
+<h3 class="is-size-3 mb-4">IJC-Komitees</h3>
+<p>
+  Diese Komitees helfen dem IJC, seine Mission zu verwirklichen. Wenn es ein bestimmtes Komitee oder einen Bereich gibt, bei dem du helfen möchtest, kannst du dich auch an den zuständigen Kommissar per Discord wenden.
+</p>
+<table class="table is-fullwidth is-striped">
+  <thead>
+    <tr>
+      <th>Committee</th>
+      <th>Commissioner</th>
+      <th>What They Do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Web Presence</td>
+      <td>Valkyrie Savage</td>
+      <td>Designs and builds the IJC website and maintains our online presence.</td>
+    </tr>
+    <tr>
+      <td>Corporate Image</td>
+      <td>Valkyrie Savage</td>
+      <td>Designs and maintains a coherent visual brand for the IJC.</td>
+    </tr>
+    <tr>
+      <td>Mapping</td>
+      <td>Gil Richard</td>
+      <td>Keeps track of the locations of jugger groups across the globe and updates the Jugger World Map.</td>
+    </tr>
+    <tr>
+      <td>Growth Support</td>
+      <td>Gabriel Maynard Hernández</td>
+      <td>Assists new clubs with training, equipment building, and promotion.</td>
+    </tr>
+    <tr>
+      <td>Rules Comparison</td>
+      <td>Wendy J-M</td>
+      <td>Compares existing jugger rulebooks to help promote eventual agreement on an international ruleset.</td>
+    </tr>
+    <tr>
+      <td>International Competition</td>
+      <td>Ian Williams</td>
+      <td>Assists tournament organizers with planning tournaments at all scales and levels of play.</td>
+    </tr>
+    <tr>
+      <td>Legal Support</td>
+      <td>Pijus “Pope” Stankevičius</td>
+      <td>Manages internal IJC regulations and by-laws to ensure the IJC is a solid institution that can help out juggers at every level.</td>
+    </tr>
+    <tr>
+      <td>Ethics</td>
+      <td>Miguel Alvarado</td>
+      <td>Studies complaints of breaches of our <a href="https://docs.google.com/document/d/1PA8wOP_-ITgONZFS6FuFjjPXXVSUNqZY6RtcvfJF268/edit?usp=sharing">Code of Conduct</a> and provides recommendations for resolution.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
+  </section>
+</div>
+
+
+    <script src="/js/main.js"></script>
+    
+
+    <footer>
+      <div id="footer-container">
+        <div class="side-img">
+          <img src="/img/logo/logo_left.svg">
+        </div>
+        <div>
+          Verbinde dich mit dem IJC bei <a href="https://discord.gg/jXqhcYu">Discord</a> oder per <a href="mailto://juggerinternational@gmail.com">E-mail</a><br/><br/>
+<a href="https://github.com/international-jugger-council/ijc-website/blob/master/CONTRIBUTORS.md">Siehe Webseite-Mitarbeiters</a><br/>
+
+        </div>
+        <div class="side-img">
+          <img src="/img/logo/logo_right.svg">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

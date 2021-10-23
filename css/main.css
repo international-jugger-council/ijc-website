@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');
+
+@font-face {
+    font-family: "Clean Sports";
+    src: url(/fonts/CleanSports-Intl.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Clean Sports Stencil";
+    src: url(/fonts/CleanSports_Stencil.ttf) format("truetype");
+}
+
+:root {
+  --ijc-yellow: #fbb040;
+  --ijc-black: #231f20;
+  --ijc-grey-dark: #4c4345;
+  --ijc-grey-light: #eeebec;
+  --ijc-red: #ed1c24;
+  --ijc-green: #009444;
+  --ijc-blue: #1b75bc;
+  --ijc-blue-light: #83beed;
+
+  --ijc-yellow-overlay: rgba(159, 96, 3, 0.7);
+  --ijc-red-overlay: rgba(175, 14, 20, 0.7);
+  --ijc-green-overlay: rgba(0, 72, 33, 0.7);
+  --ijc-blue-overlay: rgba(17, 75, 121, 0.7);
+}
+
+body {
+  color: var(--ijc-black);
+  font-family: 'Exo 2', Sans-Serif;
+}
+
+a,
+.navbar-link:not(.is-arrowless)::after {
+  color: var(--ijc-blue);
+}
+
+a:hover,
+.navbar-link:not(.is-arrowless):hover::after {
+  color: var(--ijc-blue-light);
+}
+
+article.message {
+  background-color: var(--ijc-grey-light);
+  font-style: italic;
+}
+
+.message-body {
+  border-color: #beb5b8;
+  color: var(--ijc-grey-dark);
+}
+
+#ijc_modal_lang_warning .modal-card-foot {
+  justify-content: flex-end;
+}
+
+#ijc_modal_lang_warning p {
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.25em;
+}
+
+.navbar-dropdown > .navbar-item {
+  font-size: 1rem;
+}
+
+#ijc_logo {
+  margin-right: 0.5rem;
+  max-height: 3.5rem;
+}
+
+#ijc_logo_full {
+  height: 320px;
+  margin-top: -15px;
+}
+
+.navbar-burger {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+#ijc_lang {
+  min-height: calc(100vh - 52px);
+}
+
+.ijc-page {
+  margin-top: 1.25rem;
+}
+
+.ijc-blurb.container {
+  padding: 2.5rem 1rem;
+}
+
+.ijc-blurb.container p {
+  font-size: 1.25rem;
+}
+
+.ijc-blurb.container p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-body {
+  z-index: 2;
+}
+
+#page_index .hero-body {
+  background-color: var(--ijc-red-overlay);
+}
+
+#page_about .hero-body {
+  background-color: var(--ijc-green-overlay);
+}
+
+#page_play .hero-body {
+  background-color: var(--ijc-yellow-overlay);
+}
+
+.hero-body h2 {
+  color: white;
+  font-family: "Clean Sports";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.hero#connect_with_community::before {
+  background: url('/img/photos/connect_with_community.jpg');
+  background-position-y: 40%;
+  background-size: cover;
+}
+
+.hero#find_a_club::before {
+  background: url('/img/photos/find_a_club.jpg');
+  background-position-y: 70%;
+  background-size: cover;
+}
+
+.hero#mission_statement::before {
+  background: url('/img/photos/mission_statement.jpg');
+  background-position-y: 50%;
+  background-size: cover;
+}
+
+.hero#rules::before {
+  background: url('/img/photos/rules.jpg');
+  background-position-y: 25%;
+  background-size: cover;
+}
+
+.hero#start_a_club::before {
+  background: url('/img/photos/start_a_club.jpg');
+  background-position-y: 70%;
+  background-size: cover;
+}
+
+.hero#jersey_gallery::before {
+  background: url('/img/photos/jersey_gallery.jpg');
+  background-position-y: 70%;
+  background-size: cover;
+}
+
+.hero#the_ijc::before {
+  background: url('/img/photos/the_ijc.jpg');
+  background-position-y: 50%;
+  background-size: cover;
+}
+
+.hero#what_is_jugger::before {
+  background: url('/img/photos/what_is_jugger.jpg');
+  background-position-y: 50%;
+  background-size: cover;
+}
+
+.hero#who_we_are::before {
+  background: url('/img/photos/who_we_are.jpg');
+  background-position-y: 50%;
+  background-size: cover;
+}
+
+footer {
+  background-color: var(--ijc-grey-light);
+  border-top: 1px solid #beb5b8;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-img {
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .hero-body h2 {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+}
