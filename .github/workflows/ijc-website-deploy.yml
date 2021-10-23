@@ -1,4 +1,4 @@
-name: IJC Website Deploy
+name: ijc-website-deploy
 on: [push]
 
 jobs:
