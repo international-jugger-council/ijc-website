@@ -9,13 +9,13 @@ title: Jersey Gallery
 ---
 {% from 'macros.njk' import headerHero, pageSection with context %}
 
-{{ headerHero('jersey_gallery', 'Jersey Gallery' ) }}
-<a href="https://forms.gle/E4Yxa4apLfZfawTh6">Añade tus jerseys!</a>
+{{ headerHero('jersey_gallery', 'Galería de Equipaciones' ) }}
+<a href="https://forms.gle/E4Yxa4apLfZfawTh6">Añade tu equipación!</a>
 <br/>
 <div id="controls">
   <form id="display_control" onchange="displayJerseys();">
     <div class="control">
-      <label for="sort">Sorté jerseys por</label>
+      <label for="sort">Ordenar equipaciones por</label>
       <select name="sort" id="sort">
         <option value="alph_desc">equipo A-Z</option>
         <option value="alph_asc">equipo Z-A</option>
@@ -23,25 +23,25 @@ title: Jersey Gallery
         <option value="country_asc">país Z-A</option>
         <option value="designer_desc">diseñador(a) A-Z</option>
         <option value="designer_asc">diseñador(a) Z-A</option>
-        <option value="time_desc">más viejo-más nuevo</option>
-        <option value="time_asc">más nuevo-más viejo</option>
+        <option value="time_desc">más angiguas primero</option>
+        <option value="time_asc">más modernas primero</option>
       </select>
     </div>
     <div class="control">
       <label class="radio">
         <input type="radio" name="show" value="show_fronts" checked>
-        Muestra los frentes de jerseys
+        Mostrar vista frontal
       </label>
       <label class="radio">
         <input type="radio" name="show" value="show_backs">
-        Muestra las espaldas de jerseys
+        Mostrar vista trasera
       </label>
     </div>
   </form>
 </div>
 <div id="gallery"></div>
   <br/>
-  <a href="https://forms.gle/E4Yxa4apLfZfawTh6">Añade tus jerseys!</a>
+  <a href="https://forms.gle/E4Yxa4apLfZfawTh6">Añade tu equipación!</a>
   <br/>
 
 <pre id="content" style="white-space: pre-wrap;"></pre>
