@@ -76,7 +76,7 @@ function displayJerseys() {
   sort_by_chosen();
 
   // Add ze jerseys to ze gallery.
-  var jersey_gallery_html = spreadsheet_data.slice(1).map(function(jersey_data, i) {
+  var jersey_gallery_html = spreadsheet_data.map(function(jersey_data, i) {
 
     if (jersey_data[checked_col] == '') {
       // only display jerseys that someone has validated

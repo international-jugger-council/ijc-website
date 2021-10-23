@@ -18,6 +18,10 @@ module.exports = {
       label: 'Sag »Hallo!«',
       pageKey: 'play',
       pageSection: 'connect_with_community',
+    }, {
+      label: 'Trikot-Galerie',
+      pageKey: 'play',
+      pageSection: 'jersey_gallery',
     }],
   }, {
     label: 'Über uns',
@@ -57,6 +61,10 @@ module.exports = {
       label: 'Connect with the Community',
       pageKey: 'play',
       pageSection: 'connect_with_community',
+    }, {
+      label: 'Jersey Gallery',
+      pageKey: 'play',
+      pageSection: 'jersey_gallery',
     }],
   }, {
     label: 'About Us',
@@ -96,6 +104,10 @@ module.exports = {
       label: 'Conecta con la Comunidad',
       pageKey: 'play',
       pageSection: 'connect_with_community',
+    }, {
+      label: 'Galería de Jerseys',
+      pageKey: 'play',
+      pageSection: 'jersey_gallery',
     }],
   }, {
     label: 'Sobre Nosotros',
