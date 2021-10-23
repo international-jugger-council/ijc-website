@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-body {
+    background-color: var(--ijc-yellow-overlay);
+}
+
+.jersey-article {
+    display: inline-block;
+}
+
+.jersey-header {
+    padding: 10px;
+}
+
+.jersey-thumbnail {
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    border-color: white;
+}
+
+.jersey-name {
+    font-weight: bold;
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#controls div {
+    margin: 5px;
+    padding: 2px;
+    background-color: whitesmoke;
+    border: 1px;
+    border-style: solid;
+    border-color: lightskyblue;
+    border-radius: 3px;
+    display: inline-block;
+}
