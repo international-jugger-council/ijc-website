@@ -1,7 +1,7 @@
 // spreadsheet location from url
 var SPREADSHEET_KEY = '1KHNrKrpunvWNaGVStFhj7Ra2EC_kgK8sZQsxa2yiJuk';
 // API key from the developer console
-var API_KEY = 'AIzaSyB3vQlyGRJewsVWhQPisU8rcbfjZ7GTm7E';
+var API_KEY = 'AIzaSyAtjfgtWoGNkp5Uc2XQ7kh3Po3wfXY-R4U';
 // this is an extremely aggressive range. :D
 var RANGE = 'A1:ZZ10000'
 var spreadsheet_url =  `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_KEY}/values/${RANGE}?key=${API_KEY}`
