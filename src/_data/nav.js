@@ -67,6 +67,22 @@ module.exports = {
       pageSection: 'jersey_gallery',
     }],
   }, {
+      label: 'Coaching',
+      pageKey: 'coaching',
+      items:[
+        {
+          label: 'Coaching Program',
+          pageKey: 'coaching',
+          pageSection: 'coaching_program',
+        },
+        {
+          label: 'Our coaches',
+          pageKey: 'coaching',
+          pageSection: 'our_coaches',
+        }
+      ]
+  },
+   {
     label: 'About Us',
     pageKey: 'about',
     items: [{
