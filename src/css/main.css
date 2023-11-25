@@ -194,6 +194,18 @@ nav {
   background-size: cover;
 }
 
+.hero#coaching_program::before {
+  background: url('/img/photos/coaching_program.jpg');
+  background-position-y: 30%;
+  background-size: cover;
+}
+
+.hero#coaches::before {
+  background: url('/img/photos/coaches.jpg');
+  background-position-y: 30%;
+  background-size: cover;
+}
+
 footer {
   background-color: var(--ijc-grey-light);
   border-top: 1px solid #beb5b8;
