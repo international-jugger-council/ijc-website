@@ -2,36 +2,43 @@
 const SPREADSHEET_KEY = '1YA6h52-0mp1_pn_Jrm9J580Um7aDbfZ6LnKqGfQitY0';
 // API key from the developer console
 const API_KEY = 'AIzaSyBzSWqQlZi8lmL-UqZ3BT-VHxriRxA1R1c';
-const RANGE = "A:G"
+const RANGE = "A:G";
 const spreadsheet_url = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_KEY}/values/${RANGE}?key=${API_KEY}`
 let spreadsheet_data = [];
 
 function getCoaches() {
-  fetch(spreadsheet_url).then(function(response) {
-      return response.json();
-    }).then(function(result) {
-      spreadsheet_data = result.values.slice(1); // we slice off the first part, because that is the header column
-      displayCoaches();
-    });
+  fetch(spreadsheet_url).then(function (response) {
+    return response.json();
+  }).then(function (result) {
+    spreadsheet_data = result.values.slice(1); // we slice off the first part, because that is the header column
+    displayCoaches();
+  });
 }
 
 function displayCoaches() {
   const coachingContainer = document.getElementById('our_coaches')
-  if(!coachingContainer) {
+  if (!coachingContainer) {
     console.error('No coaching container found \n Add a div with id="coaches" to the page')
     return
   }
   coachingContainer.classList.add('loading')
-
+  /*
+    TODO: 
+    Figure out why the calendly link doesn't work 
+    Change the spreadsheet key to the ijc spreadsheet
+    Figure out what to do about images
+    
+  */
   for (coach of spreadsheet_data) {
     // first element is the timestamp, which we don't need
     const coachObject = createCoachObject(...coach.splice(1))
+    console.log(coachObject)
     const coachCard = `
     <div class="column p-3 is-half-tablet is-one-third-desktop is-one-quarter-widescreen">
       <div class="card">
         <div class="card-image">
             <figure class="image is-4by3 m-2 ">
-                <img loading="lazy" src="${coachObject.photo}" alt="${coachObject.name} photo">
+                <img loading="lazy" src="${coachObject.photo}" alt="${coachObject.name} photo" onerror="this.src='/img/coaching/placeholder.png'">
             </figure>
         </div>
         <div class="card-content">
@@ -47,11 +54,11 @@ function displayCoaches() {
             </div>
         </div>
             <div class="card-footer is-justify-content-flex-end">
-            <a class="column is-flex button is-text is-full" onclick="Calendly.initPopupWidget({url: ${coach.schedule}});return false;">Schedule time with me</a>
+            <a class="column is-flex button is-text is-full" onclick="Calendly.initPopupWidget({url: '${coachObject.schedule}'});return false;">Schedule time with me</a>
         </div>
       </div>
     </div>`
-    coachingContainer.innerHTML += sanitizeInput(coachCard, true)
+    coachingContainer.innerHTML += coachCard
   }
   coachingContainer.classList.remove('loading')
 }
@@ -66,12 +73,12 @@ function createCoachObject(photo, name, specialities, languages, _, schedule) {
   }
 }
 
-function createSpecializationTags (specialities) {
+function createSpecializationTags(specialities) {
   return specialities.map(speciality => `<span class="tag is-primary mr-1 mb-1">${speciality}</span>`).join('')
 }
 
-function sanitizeInput (input, allowTags = false) {
-  if(allowTags) {
+function sanitizeInput(input, allowTags = false) {
+  if (allowTags) {
     return DOMPurify.sanitize(input)
   }
   return DOMPurify.sanitize(input, {

@@ -1,6 +1,6 @@
 ---
 jsIncludes:
-  - /js/coaching.js
+- /js/coaching.js
 layout: base.njk
 pageKey: coaching
 title: Coaching program
@@ -8,14 +8,12 @@ title: Coaching program
 
 {% from 'macros.njk' import headerHero, pageSection with context %}
 
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <div id="page_about" class="ijc-page">
   <section>
     {{ headerHero('coaching_program', 'Coaching program' ) }}
     {{ pageSection('coaching') }}
   </section>
-  
+
   <section>
     {{ headerHero('coaches', 'Our coaches' ) }}
     {{ pageSection('our_coaches') }}
