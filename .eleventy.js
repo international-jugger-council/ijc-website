@@ -1,5 +1,3 @@
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
-
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/CNAME');
   eleventyConfig.addPassthroughCopy('src/css/*.css');
@@ -12,7 +10,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'node_modules/bulma/css/bulma.min.css': 'css/bulma.min.css',
   });
-  eleventyConfig.addPlugin(UpgradeHelper);
   return {
     dir: {
       input: 'src',
