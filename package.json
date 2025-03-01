@@ -18,12 +18,12 @@
   },
   "homepage": "https://juggercouncil.org",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "imagemin-cli": "^6.0.0",
     "imagemin-mozjpeg": "^9.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^2.0.5",
+    "@11ty/eleventy-upgrade-help": "^3.0.1",
     "bulma": "^0.9.1"
   }
 }
