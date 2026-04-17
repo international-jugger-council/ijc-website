@@ -1,6 +1,6 @@
 # IJC Website Contributors
 
-Building and maintaining the IJC website is a team effort!  If you'd like to get involved, connect with us on [Discord](https://discord.gg/jXqhcYu) in the `#ijc-web` channel, or send us an [email](mailto://juggerinternational@gmail.com).
+Building and maintaining the IJC website is a team effort!  If you'd like to get involved, connect with us on [Discord](https://discord.gg/qzBuXp23tu).
 
 Many people have contributed time and effort to help make this website a reality.
 
